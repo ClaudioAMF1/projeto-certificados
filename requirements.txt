@@ -1,0 +1,11 @@
+# Requisitos para o sistema de processamento de certificados
+# Python 3.6+ é recomendado
+
+# Bibliotecas padrão usadas (não precisam ser instaladas separadamente):
+# - csv
+# - os
+# - datetime
+
+# Bibliotecas externas necessárias:
+pandas==2.1.1
+openpyxl==3.1.2
