@@ -311,6 +311,155 @@ def cursos_correspondentes(curso_freq, curso_insc):
     return False
 
 
+def ordenar_por_nome(aluno):
+    """
+    Função para ordenação segura por nome, tratando diferentes tipos de dados
+    
+    Args:
+        aluno: Dicionário com informações do aluno
+        
+    Returns:
+        Nome do aluno convertido para string para ordenação segura
+    """
+    nome = aluno.get('NOME', '')
+    if nome is None:
+        return ""
+    return str(nome).lower()
+
+
+def gerar_planilhas_por_curso(dados_finais, diretorio_saida="certificados_por_curso"):
+    """
+    Gera planilhas separadas para cada curso
+    
+    Args:
+        dados_finais: Lista de dicionários com dados dos alunos aprovados
+        diretorio_saida: Diretório onde serão salvos os arquivos
+    """
+    # Criar diretório se não existir
+    if not os.path.exists(diretorio_saida):
+        os.makedirs(diretorio_saida)
+    
+    # Agrupar alunos por curso
+    alunos_por_curso = {}
+    for aluno in dados_finais:
+        curso = aluno['CURSO']
+        if curso not in alunos_por_curso:
+            alunos_por_curso[curso] = []
+        alunos_por_curso[curso].append(aluno)
+    
+    # Gerar uma planilha para cada curso
+    for curso, alunos in alunos_por_curso.items():
+        # Criar nome de arquivo seguro (remover caracteres especiais)
+        nome_arquivo = re.sub(r'[^a-zA-Z0-9]', '_', curso)
+        caminho_arquivo = os.path.join(diretorio_saida, f"{nome_arquivo}.csv")
+        
+        # Criar DataFrame e salvar
+        df_curso = pd.DataFrame(alunos)
+        df_curso.to_csv(caminho_arquivo, index=False, encoding='utf-8')
+        print(f"Arquivo para curso '{curso}' gerado: {caminho_arquivo} ({len(alunos)} alunos)")
+
+
+def salvar_relatório_reprovados(alunos_reprovados, arquivo_saida="alunos_reprovados.csv"):
+    """
+    Salva um relatório detalhado dos alunos reprovados
+    
+    Args:
+        alunos_reprovados: Lista de dicionários com dados dos alunos reprovados
+        arquivo_saida: Caminho para o arquivo CSV de saída
+    """
+    # Preparar dados para o relatório
+    dados_relatorio = []
+    for aluno in alunos_reprovados:
+        nome = str(aluno['NOME'])
+        curso = str(aluno['CURSO'])
+        motivo = "Presença insuficiente" if 'MOTIVO' not in aluno else aluno['MOTIVO']
+        
+        # Coletar detalhes de presença se disponíveis
+        presenca_info = ""
+        if 'DETALHES_PRESENCA' in aluno:
+            presenca_info = aluno['DETALHES_PRESENCA']
+        
+        dados_relatorio.append({
+            'NOME': nome,
+            'CURSO': curso,
+            'MOTIVO_REPROVACAO': motivo,
+            'DETALHES': presenca_info
+        })
+    
+    # Salvar relatório
+    df_reprovados = pd.DataFrame(dados_relatorio)
+    df_reprovados.to_csv(arquivo_saida, index=False, encoding='utf-8')
+    print(f"Relatório de reprovados gerado: {arquivo_saida} ({len(dados_relatorio)} alunos)")
+
+
+def salvar_relatório_nao_incluidos(alunos_nao_incluidos, arquivo_saida="alunos_nao_incluidos.csv"):
+    """
+    Salva um relatório dos alunos aprovados por frequência mas não incluídos no arquivo final
+    
+    Args:
+        alunos_nao_incluidos: Lista de strings com informações dos alunos não incluídos
+        arquivo_saida: Caminho para o arquivo CSV de saída
+    """
+    # Preparar dados para o relatório
+    dados_relatorio = []
+    for aluno_info in alunos_nao_incluidos:
+        partes = aluno_info.split(" - ", 1)
+        nome = partes[0] if len(partes) > 0 else ""
+        curso = partes[1] if len(partes) > 1 else ""
+        
+        dados_relatorio.append({
+            'NOME': nome,
+            'CURSO': curso,
+            'MOTIVO': "Inscrição não encontrada ou curso não correspondente"
+        })
+    
+    # Salvar relatório
+    df_nao_incluidos = pd.DataFrame(dados_relatorio)
+    df_nao_incluidos.to_csv(arquivo_saida, index=False, encoding='utf-8')
+    print(f"Relatório de alunos não incluídos gerado: {arquivo_saida} ({len(dados_relatorio)} alunos)")
+
+
+def encontrar_melhor_correspondencia(nome_aluno, inscritos, limiar=0.65):
+    """
+    Encontra a melhor correspondência para um nome de aluno entre os inscritos
+    
+    Args:
+        nome_aluno: Nome do aluno na frequência
+        inscritos: Lista de dicionários com inscrições
+        limiar: Limiar mínimo de similaridade para considerar correspondência
+        
+    Returns:
+        O índice da melhor correspondência ou None se não encontrar
+    """
+    nome_aluno_norm = normalizar_nome(nome_aluno)
+    melhor_idx = None
+    melhor_similaridade = 0
+    
+    for idx, inscrito in enumerate(inscritos):
+        nome_inscrito = inscrito.get('Nome completo', '')
+        if not isinstance(nome_inscrito, str):
+            try:
+                nome_inscrito = str(nome_inscrito)
+            except:
+                nome_inscrito = ""
+                
+        nome_inscrito_norm = normalizar_nome(nome_inscrito)
+        
+        # Verificar similaridade
+        similaridade = calcular_similaridade(nome_aluno_norm, nome_inscrito_norm)
+        
+        # Verificar se é melhor que a anterior e atende ao limiar
+        if similaridade > melhor_similaridade and similaridade >= limiar:
+            melhor_similaridade = similaridade
+            melhor_idx = idx
+        
+        # Se encontrar correspondência exata, retornar imediatamente
+        if similaridade > 0.9:
+            return idx
+    
+    return melhor_idx
+
+
 def processar_frequencia_pandas(arquivo_frequencia):
     """
     Processa o arquivo de frequência usando pandas e retorna a lista de alunos aprovados.
@@ -347,132 +496,157 @@ def processar_frequencia_pandas(arquivo_frequencia):
     alunos_aprovados = []
     alunos_reprovados = []
     
-    # Processar cada linha
-    for idx, row in df.iterrows():
-        # Converter valores para string para evitar problemas de tipo
-        nome_aluno = str(row['ALUNOS']) if pd.notna(row['ALUNOS']) else ""
-        curso = str(row['CURSO']) if pd.notna(row['CURSO']) else ""
+    # Registrar anomalias
+    dados_anomalos = []
+    
+    # Processar cada linha em lotes para melhorar desempenho com tabelas grandes
+    BATCH_SIZE = 500
+    
+    for i in range(0, len(df), BATCH_SIZE):
+        batch = df.iloc[i:i+BATCH_SIZE]
         
-        # Obter os valores de presença das últimas 5 colunas e converter para string
-        valores_presenca = []
-        for col in colunas_data:
-            valor = row[col]
-            if pd.isna(valor):
-                valor = ""
+        # Processar cada linha do lote
+        for idx, row in batch.iterrows():
+            # Converter valores para string para evitar problemas de tipo
+            nome_aluno = str(row['ALUNOS']) if pd.notna(row['ALUNOS']) else ""
+            curso = str(row['CURSO']) if pd.notna(row['CURSO']) else ""
+            
+            # Verificar dados inconsistentes ou anomalias
+            if not nome_aluno or not curso:
+                dados_anomalos.append({
+                    'indice': idx, 
+                    'tipo': 'Dados faltantes',
+                    'detalhes': f"Nome: '{nome_aluno}', Curso: '{curso}'",
+                })
+                continue
+            
+            # Obter os valores de presença das últimas 5 colunas e converter para string
+            valores_presenca = []
+            for col in colunas_data:
+                valor = row[col]
+                if pd.isna(valor):
+                    valor = ""
+                else:
+                    valor = str(valor).upper()
+                valores_presenca.append(valor)
+            
+            # Contar apenas os dias válidos (com valores P, F ou FJ)
+            dias_validos = [valor for valor in valores_presenca if valor in ['P', 'F', 'FJ']]
+            total_dias_validos = len(dias_validos)
+            
+            # Resumo da presença para relatórios
+            resumo_presenca = ", ".join([f"{col}: {val}" for col, val in zip(colunas_data, valores_presenca)])
+            
+            # Se não houver dias válidos, o aluno é reprovado com motivo específico
+            if total_dias_validos == 0:
+                alunos_reprovados.append({
+                    'NOME': nome_aluno,
+                    'CURSO': curso,
+                    'MOTIVO': 'Sem dias válidos de presença',
+                    'DETALHES_PRESENCA': resumo_presenca
+                })
+                continue
+                
+            # Contar as presenças (P ou FJ)
+            dias_presentes = sum(1 for valor in dias_validos if valor in ['P', 'FJ'])
+            
+            # Calcular a porcentagem de presença
+            porcentagem_presenca = (dias_presentes / total_dias_validos) * 100
+            
+            # Verificar se o aluno foi aprovado (pelo menos 60% de presença)
+            if porcentagem_presenca >= 60:
+                # Converter a data de conclusão para o formato desejado
+                data_formatada = formatar_data(data_conclusao)
+                
+                # Obter o nome do curso formatado para o certificado
+                curso_certificado = obter_nome_curso_para_certificado(curso)
+                
+                # Normalizar o nome para capitalização correta
+                nome_capitalizado = capitalizar_nome(nome_aluno)
+                
+                alunos_aprovados.append({
+                    'NOME': nome_capitalizado,
+                    'NOME_ORIGINAL': nome_aluno,
+                    'CURSO': curso_certificado,
+                    'CURSO_ORIGINAL': curso,
+                    'DATA_CONCLUSAO': data_formatada,
+                    'DETALHES_PRESENCA': resumo_presenca,
+                    'PORCENTAGEM_PRESENCA': f"{porcentagem_presenca:.1f}%"
+                })
             else:
-                valor = str(valor).upper()
-            valores_presenca.append(valor)
-        
-        # Contar apenas os dias válidos (com valores P, F ou FJ)
-        dias_validos = [valor for valor in valores_presenca if valor in ['P', 'F', 'FJ']]
-        total_dias_validos = len(dias_validos)
-        
-        # Se não houver dias válidos, o aluno é reprovado
-        if total_dias_validos == 0:
-            alunos_reprovados.append({
-                'NOME': nome_aluno,
-                'CURSO': curso
-            })
-            continue
-            
-        # Contar as presenças (P ou FJ)
-        dias_presentes = sum(1 for valor in dias_validos if valor in ['P', 'FJ'])
-        
-        # Calcular a porcentagem de presença
-        porcentagem_presenca = (dias_presentes / total_dias_validos) * 100
-        
-        # Verificar se o aluno foi aprovado (pelo menos 60% de presença)
-        if porcentagem_presenca >= 60:
-            # Converter a data de conclusão para o formato desejado
-            data_formatada = formatar_data(data_conclusao)
-            
-            # Obter o nome do curso formatado para o certificado
-            curso_certificado = obter_nome_curso_para_certificado(curso)
-            
-            # Normalizar o nome para capitalização correta
-            nome_capitalizado = capitalizar_nome(nome_aluno)
-            
-            alunos_aprovados.append({
-                'NOME': nome_capitalizado,
-                'NOME_ORIGINAL': nome_aluno,
-                'CURSO': curso_certificado,
-                'CURSO_ORIGINAL': curso,
-                'DATA_CONCLUSAO': data_formatada
-            })
-        else:
-            alunos_reprovados.append({
-                'NOME': nome_aluno,
-                'CURSO': curso
-            })
+                alunos_reprovados.append({
+                    'NOME': nome_aluno,
+                    'CURSO': curso,
+                    'MOTIVO': f'Presença insuficiente ({porcentagem_presenca:.1f}%)',
+                    'DETALHES_PRESENCA': resumo_presenca
+                })
+    
+    # Se encontrou anomalias, registrar em arquivo separado
+    if dados_anomalos:
+        df_anomalias = pd.DataFrame(dados_anomalos)
+        df_anomalias.to_csv('anomalias_frequencia.csv', index=False, encoding='utf-8')
+        print(f"Atenção: {len(dados_anomalos)} anomalias encontradas no arquivo de frequência. Detalhes salvos em 'anomalias_frequencia.csv'")
     
     return alunos_aprovados, alunos_reprovados, total_alunos
 
 
-def encontrar_melhor_correspondencia(nome_aluno, inscritos, limiar=0.65):
-    """
-    Encontra a melhor correspondência para um nome de aluno entre os inscritos
-    
-    Args:
-        nome_aluno: Nome do aluno na frequência
-        inscritos: Lista de dicionários com inscrições
-        limiar: Limiar mínimo de similaridade para considerar correspondência
-        
-    Returns:
-        O índice da melhor correspondência ou None se não encontrar
-    """
-    nome_aluno_norm = normalizar_nome(nome_aluno)
-    melhor_idx = None
-    melhor_similaridade = 0
-    
-    for idx, inscrito in enumerate(inscritos):
-        nome_inscrito = inscrito['Nome completo'] if 'Nome completo' in inscrito else ''
-        nome_inscrito_norm = normalizar_nome(nome_inscrito)
-        
-        # Verificar similaridade
-        similaridade = calcular_similaridade(nome_aluno_norm, nome_inscrito_norm)
-        
-        # Verificar se é melhor que a anterior e atende ao limiar
-        if similaridade > melhor_similaridade and similaridade >= limiar:
-            melhor_similaridade = similaridade
-            melhor_idx = idx
-        
-        # Se encontrar correspondência exata, retornar imediatamente
-        if similaridade > 0.9:
-            return idx
-    
-    return melhor_idx
-
-
-def processar_inscricao_pandas(arquivo_inscricao, alunos_aprovados, arquivo_saida):
+def processar_inscricao_pandas(arquivo_inscricao, alunos_aprovados, arquivo_saida, gerar_por_curso=True):
     """
     Processa o arquivo de inscrição usando pandas e gera o arquivo final com todos os dados solicitados.
+    Também gera relatórios adicionais e planilhas por curso.
     
     Args:
         arquivo_inscricao: Caminho para o arquivo CSV de inscrição
         alunos_aprovados: Lista de alunos aprovados por frequência
         arquivo_saida: Caminho para o arquivo CSV de saída
+        gerar_por_curso: Se True, gera arquivos separados por curso
+        
+    Returns:
+        Lista de dicionários com os dados dos alunos incluídos no arquivo final
     """
     try:
+        # Criar registro de log
+        log_entries = []
+        def log(mensagem):
+            timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            entry = f"[{timestamp}] {mensagem}"
+            log_entries.append(entry)
+            print(entry)  # Também exibe no console
+            return entry
+        
+        log("Iniciando processamento de inscrições")
+        
         # Ler o arquivo de inscrição com pandas
         try:
             df_inscricao = pd.read_csv(arquivo_inscricao)
+            log(f"Arquivo de inscrição lido com sucesso. {len(df_inscricao)} inscrições encontradas.")
         except Exception as e:
-            print(f"Erro ao ler o arquivo de inscrição: {str(e)}")
+            log(f"Erro ao ler o arquivo de inscrição: {str(e)}")
             # Tentar com codificação diferente
             try:
                 df_inscricao = pd.read_csv(arquivo_inscricao, encoding='latin1')
+                log(f"Arquivo lido com codificação alternativa. {len(df_inscricao)} inscrições encontradas.")
             except Exception as e2:
-                print(f"Segundo erro ao ler arquivo: {str(e2)}")
+                log(f"Segundo erro ao ler arquivo: {str(e2)}")
                 raise
+        
+        # Verificar valores ausentes nas colunas importantes
+        colunas_essenciais = ['Nome completo', 'Para qual curso você quer se inscrever?']
+        for coluna in colunas_essenciais:
+            if coluna in df_inscricao.columns:
+                ausentes = df_inscricao[coluna].isna().sum()
+                if ausentes > 0:
+                    log(f"AVISO: {ausentes} valores ausentes na coluna '{coluna}'")
         
         # Converter DataFrame para lista de dicionários para facilitar o processamento
         inscritos = df_inscricao.to_dict('records')
+        log(f"Dados convertidos para processamento. Iniciando correspondência de alunos.")
         
         # Campos que serão incluídos no arquivo final
         campos_finais = [
             'DATA_ADESAO', 'ESTADO', 'ESCOLA', 'NOME', 'CURSO', 'TELEFONE', 
             'EMAIL', 'CPF', 'DIA', 'MES', 'ANO', 'IDADE', 'COR_PELE', 
-            'SEXO', 'SERIE_ESCOLAR', 'DATA_CONCLUSAO'
+            'SEXO', 'SERIE_ESCOLAR', 'DATA_CONCLUSAO', 'PORCENTAGEM_PRESENCA'
         ]
         
         # Mapeamento dos campos do arquivo de inscrição para os campos finais
@@ -503,136 +677,190 @@ def processar_inscricao_pandas(arquivo_inscricao, alunos_aprovados, arquivo_said
         correspondencias_encontradas = 0
         correspondencias_por_curso = {}
         
-        # Para cada aluno aprovado, encontrar sua inscrição correspondente
-        for aluno in alunos_aprovados:
-            nome_aluno = aluno['NOME_ORIGINAL']
-            nome_normalizado = aluno['NOME']
-            curso_frequencia = aluno['CURSO_ORIGINAL']
-            curso_certificado = aluno['CURSO']
-            data_conclusao = aluno['DATA_CONCLUSAO']
+        # Lista para registrar casos de correspondência duvidosa
+        correspondencias_duvidosas = []
+        
+        # Processar em lotes para performance
+        BATCH_SIZE = 500
+        log(f"Processando alunos aprovados em lotes de {BATCH_SIZE}")
+        
+        for i in range(0, len(alunos_aprovados), BATCH_SIZE):
+            batch = alunos_aprovados[i:i+BATCH_SIZE]
+            log(f"Processando lote {i//BATCH_SIZE + 1} ({len(batch)} alunos)")
             
-            # Registrar estatísticas por curso
-            if curso_frequencia not in correspondencias_por_curso:
-                correspondencias_por_curso[curso_frequencia] = {'total': 0, 'encontrados': 0}
-            correspondencias_por_curso[curso_frequencia]['total'] += 1
-            
-            # Garantir que nome_aluno seja uma string
-            if not isinstance(nome_aluno, str):
-                nome_aluno = str(nome_aluno)
-            
-            # Chave única para este aluno+curso
-            chave_unica = f"{normalizar_nome(nome_aluno)}|{curso_frequencia}"
-            
-            # Verificar se já incluímos este aluno+curso
-            if chave_unica in alunos_incluidos:
-                continue
-            
-            # Encontrar a melhor correspondência para este aluno
-            inscritos_filtrados = []
-            for inscrito in inscritos:
-                nome_inscrito = inscrito.get('Nome completo', '')
-                curso_inscrito = inscrito.get('Para qual curso você quer se inscrever?', '')
+            # Para cada aluno aprovado no lote, encontrar sua inscrição correspondente
+            for aluno in batch:
+                nome_aluno = aluno['NOME_ORIGINAL']
+                nome_normalizado = aluno['NOME']
+                curso_frequencia = aluno['CURSO_ORIGINAL']
+                curso_certificado = aluno['CURSO']
+                data_conclusao = aluno['DATA_CONCLUSAO']
+                porcentagem_presenca = aluno.get('PORCENTAGEM_PRESENCA', "")
                 
-                # Converter para string se necessário
-                if not isinstance(nome_inscrito, str):
-                    try:
-                        nome_inscrito = str(nome_inscrito)
-                    except:
-                        nome_inscrito = ""
+                # Registrar estatísticas por curso
+                if curso_frequencia not in correspondencias_por_curso:
+                    correspondencias_por_curso[curso_frequencia] = {'total': 0, 'encontrados': 0}
+                correspondencias_por_curso[curso_frequencia]['total'] += 1
                 
-                if not isinstance(curso_inscrito, str):
-                    try:
-                        curso_inscrito = str(curso_inscrito)
-                    except:
-                        curso_inscrito = ""
+                # Garantir que nome_aluno seja uma string
+                if not isinstance(nome_aluno, str):
+                    nome_aluno = str(nome_aluno)
                 
-                # Verificar se o nome e curso correspondem
-                try:
-                    nome_similar = nomes_similares(nome_aluno, nome_inscrito)
-                    curso_correspondente = cursos_correspondentes(curso_frequencia, curso_inscrito)
-                    
-                    if nome_similar and curso_correspondente:
-                        inscritos_filtrados.append(inscrito)
-                except Exception as e:
-                    print(f"Erro ao comparar nomes: {nome_aluno} vs {nome_inscrito}")
-                    print(f"Erro: {str(e)}")
+                # Chave única para este aluno+curso
+                chave_unica = f"{normalizar_nome(nome_aluno)}|{curso_frequencia}"
+                
+                # Verificar se já incluímos este aluno+curso
+                if chave_unica in alunos_incluidos:
+                    log(f"Aluno já processado: {nome_aluno} - {curso_frequencia}")
                     continue
-            
-            # Se encontramos correspondências, ordenar por data (mais recente primeiro)
-            inscricao_aluno = None
-            if inscritos_filtrados:
-                # Ordenar por data/hora de inscrição (se disponível)
-                try:
-                    inscritos_filtrados.sort(
-                        key=lambda x: str(x.get('Carimbo de data/hora', '')),
-                        reverse=True
-                    )
-                except Exception as e:
-                    print(f"Erro ao ordenar inscrições: {str(e)}")
                 
-                inscricao_aluno = inscritos_filtrados[0]
-            else:
-                # Se não encontrou correspondência específica para o curso, buscar a melhor correspondência pelo nome
-                try:
-                    idx_melhor = encontrar_melhor_correspondencia(nome_aluno, inscritos)
-                    if idx_melhor is not None:
-                        inscricao_aluno = inscritos[idx_melhor]
-                except Exception as e:
-                    print(f"Erro ao encontrar melhor correspondência: {str(e)}")
-            
-            # Se encontrou uma inscrição para o aluno
-            if inscricao_aluno:
-                # Marcar como incluído
-                alunos_incluidos[chave_unica] = True
-                correspondencias_encontradas += 1
-                correspondencias_por_curso[curso_frequencia]['encontrados'] += 1
+                # Encontrar a melhor correspondência para este aluno
+                inscritos_filtrados = []
+                melhor_similaridade = 0
                 
-                # Criar um novo dicionário com os campos finais
-                aluno_final = {}
-                
-                # Garantir que todos os campos estejam inicializados
-                for campo in campos_finais:
-                    aluno_final[campo] = ""
-                
-                # Mapear os campos do arquivo de inscrição para os campos finais
-                for campo_inscricao, campo_final in mapeamento_campos.items():
-                    # Verificar se o campo existe no arquivo de inscrição
-                    if campo_inscricao in inscricao_aluno and pd.notna(inscricao_aluno[campo_inscricao]):
-                        # Armazenar o valor, fazendo conversões necessárias
-                        valor = inscricao_aluno[campo_inscricao]
+                for inscrito in inscritos:
+                    nome_inscrito = inscrito.get('Nome completo', '')
+                    curso_inscrito = inscrito.get('Para qual curso você quer se inscrever?', '')
+                    
+                    # Converter para string se necessário
+                    if not isinstance(nome_inscrito, str):
+                        try:
+                            nome_inscrito = str(nome_inscrito)
+                        except:
+                            nome_inscrito = ""
+                    
+                    if not isinstance(curso_inscrito, str):
+                        try:
+                            curso_inscrito = str(curso_inscrito)
+                        except:
+                            curso_inscrito = ""
+                    
+                    # Verificar se o nome e curso correspondem
+                    try:
+                        nome_similar = nomes_similares(nome_aluno, nome_inscrito)
+                        curso_correspondente = cursos_correspondentes(curso_frequencia, curso_inscrito)
                         
-                        # Converter para string se não for
-                        if not isinstance(valor, str):
-                            try:
-                                valor = str(valor)
-                            except:
-                                valor = ""
+                        # Calcular similaridade para registro de casos duvidosos
+                        similaridade = calcular_similaridade(
+                            normalizar_nome(nome_aluno), 
+                            normalizar_nome(nome_inscrito)
+                        )
                         
-                        # Tratar o valor conforme o campo
-                        if campo_final == 'NOME':
-                            # Usar o nome normalizado da frequência
-                            valor = nome_normalizado
-                        elif campo_final == 'ESTADO' and valor:
-                            # Normalizar sigla de estado
-                            valor = str(valor).strip().upper()
-                        elif campo_final in ['DIA', 'ANO', 'IDADE'] and pd.notna(valor):
-                            # Garantir que seja um inteiro
-                            try:
-                                valor = int(float(valor))
-                            except:
-                                pass
+                        if similaridade > melhor_similaridade:
+                            melhor_similaridade = similaridade
                         
-                        aluno_final[campo_final] = valor
+                        if nome_similar and curso_correspondente:
+                            inscritos_filtrados.append({
+                                'inscricao': inscrito,
+                                'similaridade': similaridade
+                            })
+                            
+                            # Registrar casos de similaridade baixa mas aceitável
+                            if 0.6 <= similaridade < 0.8:
+                                correspondencias_duvidosas.append({
+                                    'nome_frequencia': nome_aluno,
+                                    'nome_inscricao': nome_inscrito,
+                                    'curso': curso_frequencia,
+                                    'similaridade': similaridade
+                                })
+                    except Exception as e:
+                        log(f"Erro ao comparar nomes: {nome_aluno} vs {nome_inscrito} - {str(e)}")
+                        continue
                 
-                # Adicionar a data de conclusão e o curso formatado do aluno aprovado
-                aluno_final['DATA_CONCLUSAO'] = data_conclusao
-                aluno_final['CURSO'] = curso_certificado
+                # Se encontramos correspondências, ordenar por similaridade (melhor primeiro)
+                inscricao_aluno = None
+                if inscritos_filtrados:
+                    # Ordenar por similaridade e depois por data (mais recente primeiro)
+                    try:
+                        inscritos_filtrados.sort(
+                            key=lambda x: (
+                                x['similaridade'], 
+                                str(x['inscricao'].get('Carimbo de data/hora', ''))
+                            ),
+                            reverse=True
+                        )
+                    except Exception as e:
+                        log(f"Erro ao ordenar inscrições: {str(e)}")
+                    
+                    inscricao_aluno = inscritos_filtrados[0]['inscricao']
+                    log(f"Correspondência encontrada para {nome_aluno} - {curso_frequencia} (similaridade: {inscritos_filtrados[0]['similaridade']:.2f})")
+                else:
+                    # Se não encontrou correspondência específica para o curso, buscar a melhor correspondência pelo nome
+                    try:
+                        idx_melhor = encontrar_melhor_correspondencia(nome_aluno, inscritos)
+                        if idx_melhor is not None:
+                            inscricao_aluno = inscritos[idx_melhor]
+                            log(f"Correspondência parcial para {nome_aluno} - {curso_frequencia} (melhor similaridade: {melhor_similaridade:.2f})")
+                    except Exception as e:
+                        log(f"Erro ao encontrar melhor correspondência: {str(e)}")
                 
-                # Garantir que o nome seja capitalizado corretamente
-                if aluno_final['NOME']:
-                    aluno_final['NOME'] = capitalizar_nome(aluno_final['NOME'])
-                
-                dados_finais.append(aluno_final)
+                # Se encontrou uma inscrição para o aluno
+                if inscricao_aluno:
+                    # Marcar como incluído
+                    alunos_incluidos[chave_unica] = True
+                    correspondencias_encontradas += 1
+                    correspondencias_por_curso[curso_frequencia]['encontrados'] += 1
+                    
+                    # Criar um novo dicionário com os campos finais
+                    aluno_final = {}
+                    
+                    # Garantir que todos os campos estejam inicializados
+                    for campo in campos_finais:
+                        aluno_final[campo] = ""
+                    
+                    # Mapear os campos do arquivo de inscrição para os campos finais
+                    for campo_inscricao, campo_final in mapeamento_campos.items():
+                        # Verificar se o campo existe no arquivo de inscrição
+                        if campo_inscricao in inscricao_aluno and pd.notna(inscricao_aluno[campo_inscricao]):
+                            # Armazenar o valor, fazendo conversões necessárias
+                            valor = inscricao_aluno[campo_inscricao]
+                            
+                            # Converter para string se não for
+                            if not isinstance(valor, str):
+                                try:
+                                    valor = str(valor)
+                                except:
+                                    valor = ""
+                            
+                            # Tratar o valor conforme o campo
+                            if campo_final == 'NOME':
+                                # Usar o nome normalizado da frequência
+                                valor = nome_normalizado
+                            elif campo_final == 'ESTADO' and valor:
+                                # Normalizar sigla de estado
+                                valor = str(valor).strip().upper()
+                            elif campo_final in ['DIA', 'ANO', 'IDADE'] and pd.notna(valor):
+                                # Garantir que seja um inteiro
+                                try:
+                                    valor = int(float(valor))
+                                except:
+                                    pass
+                            
+                            aluno_final[campo_final] = valor
+                    
+                    # Adicionar a data de conclusão, curso formatado e porcentagem de presença 
+                    aluno_final['DATA_CONCLUSAO'] = data_conclusao
+                    aluno_final['CURSO'] = curso_certificado
+                    aluno_final['PORCENTAGEM_PRESENCA'] = porcentagem_presenca
+                    
+                    # Garantir que o nome seja capitalizado corretamente
+                    if aluno_final['NOME']:
+                        aluno_final['NOME'] = capitalizar_nome(aluno_final['NOME'])
+                    
+                    dados_finais.append(aluno_final)
+                else:
+                    log(f"Não foi encontrada inscrição para: {nome_aluno} - {curso_frequencia}")
+        
+        # Salvar log de processamento
+        with open("processamento_log.txt", "w", encoding="utf-8") as f:
+            f.write("\n".join(log_entries))
+        log(f"Log de processamento salvo em 'processamento_log.txt'")
+        
+        # Salvar correspondências duvidosas
+        if correspondencias_duvidosas:
+            df_duvidosas = pd.DataFrame(correspondencias_duvidosas)
+            df_duvidosas.to_csv('correspondencias_duvidosas.csv', index=False, encoding='utf-8')
+            log(f"Correspondências duvidosas salvas em 'correspondencias_duvidosas.csv' ({len(correspondencias_duvidosas)} registros)")
         
         # Converter para DataFrame para facilitar a escrita
         df_final = pd.DataFrame(dados_finais)
@@ -650,8 +878,11 @@ def processar_inscricao_pandas(arquivo_inscricao, alunos_aprovados, arquivo_said
             df_final.to_csv(arquivo_saida, index=False, encoding='utf-8')
             print(f"Arquivo '{arquivo_saida}' gerado com sucesso!")
             print(f"Total de alunos no arquivo final: {len(df_final)} de {len(alunos_aprovados)} aprovados ({(len(df_final)/len(alunos_aprovados)*100):.1f}%)")
+            log(f"Arquivo final gerado com {len(df_final)} alunos")
         except Exception as e:
-            print(f"Erro ao escrever arquivo: {str(e)}")
+            error_msg = f"Erro ao escrever arquivo: {str(e)}"
+            print(error_msg)
+            log(error_msg)
             import traceback
             traceback.print_exc()
         
@@ -669,7 +900,10 @@ def processar_inscricao_pandas(arquivo_inscricao, alunos_aprovados, arquivo_said
             if chave not in alunos_incluidos:
                 alunos_nao_incluidos.append(f"{nome_aluno} - {curso}")
         
+        # Gerar relatório de alunos não incluídos
         if alunos_nao_incluidos:
+            salvar_relatório_nao_incluidos(alunos_nao_incluidos)
+            
             print(f"\nAlunos aprovados mas não incluídos (por falta de inscrição ou inscrição para curso incorreto): {len(alunos_nao_incluidos)}")
             print("-" * 80)
             print("| {:<4} | {:<40} | {:<20} |".format("Nº", "Nome do Aluno", "Curso"))
@@ -696,28 +930,18 @@ def processar_inscricao_pandas(arquivo_inscricao, alunos_aprovados, arquivo_said
                 curso[:30], total, encontrados, taxa
             ))
         
+        # Gerar planilhas separadas por curso se solicitado
+        if gerar_por_curso and dados_finais:
+            gerar_planilhas_por_curso(dados_finais)
+        
         print("\n" + "-"*80)
         
+        return dados_finais
     except Exception as e:
         print(f"Erro geral em processar_inscricao_pandas: {str(e)}")
         import traceback
         traceback.print_exc()
-
-
-def ordenar_por_nome(aluno):
-    """
-    Função para ordenação segura por nome, tratando diferentes tipos de dados
-    
-    Args:
-        aluno: Dicionário com informações do aluno
-        
-    Returns:
-        Nome do aluno convertido para string para ordenação segura
-    """
-    nome = aluno.get('NOME', '')
-    if nome is None:
-        return ""
-    return str(nome).lower()
+        return []  # Retornar lista vazia em caso de erro
 
 
 def main():
@@ -762,13 +986,16 @@ def main():
                 nome = str(aluno['NOME'])
                 curso = str(aluno['CURSO'])
                 print("| {:<4} | {:<40} | {:<20} |".format(i, nome[:40], curso[:20]))
+            
+            # Salvar relatório de reprovados
+            salvar_relatório_reprovados(alunos_reprovados)
         
         # Processar o arquivo de inscrição e gerar o arquivo final
         print("\n" + "-"*80)
         print("PROCESSAMENTO DE INSCRIÇÕES")
         print("-"*80)
         print("Processando arquivo de inscrição e gerando certificados...")
-        processar_inscricao_pandas(arquivo_inscricao, alunos_aprovados, arquivo_saida)
+        dados_finais = processar_inscricao_pandas(arquivo_inscricao, alunos_aprovados, arquivo_saida, gerar_por_curso=True)
         
         # Exibir estatísticas finais
         print("\n" + "-"*80)
@@ -777,6 +1004,7 @@ def main():
         print(f"Total de alunos na chamada: {total_alunos}")
         print(f"Total de alunos aprovados: {len(alunos_aprovados)}")
         print(f"Total de alunos reprovados: {len(alunos_reprovados)}")
+        print(f"Total de certificados gerados: {len(dados_finais)}")
         
     except Exception as e:
         print(f"\nErro ao processar os arquivos: {str(e)}")
