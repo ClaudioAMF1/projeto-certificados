@@ -1,105 +1,35 @@
-Nº ALUNOS,ALUNOS,CURSO,TURNO,10/3,11/3,12/3,13/3,14/3
-1,antony eduardo wolff,PC Gamer,Matutino,P,P,p,p,P
-2,arthur de barros oliveira ,PC Gamer,Matutino,P,P,p,p,F
-3,Arthur Tavares Imperator Costa,PC Gamer,Matutino,P,P,p,p,P
-5,Bruno De Souza Kasper,PC Gamer,Matutino,P,P,p,p,P
-6,Eliézer dos santos nunes,PC Gamer,Matutino,P,F,p,p,P
-7,emanuelly rodrigues de souza,PC Gamer,Matutino,P,P,p,p,F
-8,felipe fernandes,PC Gamer,Matutino,P,P,p,p,P
-9,Felipe Machado Hahn,PC Gamer,Matutino,P,P,p,p,P
-10,Felipe Pereira Rocha,PC Gamer,Matutino,P,P,p,p,P
-11,Gabriela de Moura Santos,PC Gamer,Matutino,P,P,p,p,P
-12,GIOVANA CASTRO RIBEIRO,PC Gamer,Matutino,F,P,p,p,P
-13,jamili nunes ,PC Gamer,Matutino,P,P,p,p,F
-14,Janaina Martins da Paixão dos Santos,PC Gamer,Matutino,P,P,f,p,P
-15,jelyson borges siqueira,PC Gamer,Matutino,P,P,p,p,P
-16,joao vitor de medeiros lacerda,PC Gamer,Matutino,P,F,p,F,P
-17,joaquim de azevedo fernandes,PC Gamer,Matutino,P,P,p,p,P
-18,Jonatas de Melo Rodrigues Lucas,PC Gamer,Matutino,P,P,p,p,P
-19,Júlia Silva Do Nascimento,PC Gamer,Matutino,P,P,p,p,P
-20,Kauan Greff Cardoso,PC Gamer,Matutino,P,P,p,p,P
-21,mariaeduardasoareshartmann,PC Gamer,Matutino,P,P,F,p,P
-22,miguel boeira amaral atzeni,PC Gamer,Matutino,P,P,p,p,P
-23,natalia danieli de oliveira roque,PC Gamer,Matutino,P,P,p,p,F
-24,pablo henrrique barbosa garcia ,PC Gamer,Matutino,P,P,p,p,P
-25,pedro leal ferreira,PC Gamer,Matutino,P,P,F,p,P
-26,Ricardo Severo Gonçalves ,PC Gamer,Matutino,P,P,p,p,P
-27,rodrigo silva de souza,PC Gamer,Matutino,P,F,p,p,F
-28,Samuel Betscheoveski Pompeu Gomes,PC Gamer,Matutino,P,P,p,p,P
-29,sophia romao machado,PC Gamer,Matutino,P,P,p,f,P
-30,TAYLOR DOS SANTOS RODRIGUES,PC Gamer,Matutino,P,P,p,p,P
-1,agata dores lautert da silva,Dev. Jogos,Matutino,P,P,P,P,P
-2,Alexander Maidana Raulino,Dev. Jogos,Matutino,P,P,P,P,P
-4,Arthur Augusto Luiz Dos Santos,Dev. Jogos,Matutino,P,P,P,P,F
-5,arthur pietro silva padilha ,Dev. Jogos,Matutino,P,P,P,P,P
-6,cauane b. moura,Dev. Jogos,Matutino,P,F,F,F,P
-7,eduarda batista gottschalk,Dev. Jogos,Matutino,P,P,P,P,P
-8,eduarda machado da silva,Dev. Jogos,Matutino,P,P,P,P,P
-9,Eduardo Machado Machado,Dev. Jogos,Matutino,P,P,P,P,P
-10,emily de alencar ribeiro,Dev. Jogos,Matutino,P,F,F,F,P
-11,Felipe da Silva Silveira,Dev. Jogos,Matutino,P,P,P,P,P
-12,Gabriel Rocha Silva,Dev. Jogos,Matutino,P,P,P,P,P
-13,GIOVANA MOURA BRAGA                 ,Dev. Jogos,Matutino,P,P,P,P,P
-14,Guilherme Nobles Ribeiro,Dev. Jogos,Matutino,P,P,P,P,F
-15,Gustavo,Dev. Jogos,Matutino,P,P,P,P,P
-16,Iasmin Manuela Pereira da SILVA,Dev. Jogos,Matutino,P,P,P,P,P
-17,julia correa rodrigues,Dev. Jogos,Matutino,P,F,P,P,P
-18,juliely de souza,Dev. Jogos,Matutino,P,P,P,P,F
-19,ketelyn vitoria rocha de lima de souza,Dev. Jogos,Matutino,P,P,P,P,P
-20,Manuela Silva Almeida,Dev. Jogos,Matutino,P,P,P,P,P
-21,manuela siqueira da silva,Dev. Jogos,Matutino,P,P,F,F,P
-22,Manuella Caetano Moraes,Dev. Jogos,Matutino,P,P,P,P,P
-23,Matheus Rosa Moccelin ,Dev. Jogos,Matutino,P,P,P,P,P
-24,Rafaela da Silva Ramos,Dev. Jogos,Matutino,P,P,P,P,F
-25,Sofia dos santos dias,Dev. Jogos,Matutino,P,P,P,P,P
-26,thais maciel borges,Dev. Jogos,Matutino,P,P,P,P,P
-27,victor moyses nowinski,Dev. Jogos,Matutino,P,P,P,P,P
-28,yasmim graziela xavier borges ,Dev. Jogos,Matutino,P,F,F,F,P
-1,Adam de Almeida Fernandes,Dev. Jogos,Vespertino,P,p,P,p,P
-2,adelar jose dos santos kich,Dev. Jogos,Vespertino,P,p,F,p,P
-3,Alisson Silva dos Silva,Dev. Jogos,Vespertino,P,p,P,p,P
-4,amanda da hora machado,Dev. Jogos,Vespertino,P,p,P,p,P
-5,ARTHUR JOSUE CORDEIRO DA ROCHA,Dev. Jogos,Vespertino,P,p,P,p,P
-6,barbara maria moreira de freitas ,Dev. Jogos,Vespertino,P,p,P,p,F
-7,Bryan Gabriel da Rosa Marins,Dev. Jogos,Vespertino,P,p,P,p,P
-8,diogo eduardo ferreira dos santos,Dev. Jogos,Vespertino,P,p,P,p,P
-9,Ezequiel Leandro da Silva Costa,Dev. Jogos,Vespertino,P,p,P,p,P
-10,Fabio junior zandavalli de oliveira,Dev. Jogos,Vespertino,P,p,P,p,F
-11,Henrique guatimosim martins,Dev. Jogos,Vespertino,P,p,P,p,P
-12,Isabelli Dorneles Machado,Dev. Jogos,Vespertino,P,p,P,p,P
-13,manuela duarte mendonça ,Dev. Jogos,Vespertino,P,p,P,p,P
-14,Maria Gabriela Rosa Garcia,Dev. Jogos,Vespertino,P,p,P,p,P
-15,Natalia zanini leote,Dev. Jogos,Vespertino,P,p,P,p,P
-16,Nayane vitoria de aguiar gomes,Dev. Jogos,Vespertino,P,p,P,p,F
-17,otavio augusto nunes silva,Dev. Jogos,Vespertino,P,f,P,p,P
-18,Rafael domingos alves,Dev. Jogos,Vespertino,P,p,P,p,P
-19,renan machado monteiro ,Dev. Jogos,Vespertino,P,f,P,f,P
-20,ricardo juan dos santos,Dev. Jogos,Vespertino,P,f,P,p,P
-21,Sebastian Almeida Fernandes,Dev. Jogos,Vespertino,P,p,P,p,P
-22,Thaeme da Rocha Duarte,Dev. Jogos,Vespertino,P,p,P,p,P
-23,wesley costa da silva,Dev. Jogos,Vespertino,P,p,P,p,P
-24,rayanne damacia souza da luz,Dev. Jogos,Vespertino,p,p,P,p,P
-25,Rafael de almeida padilha da fonseca,Dev. Jogos,Vespertino,f,p,P,p,P
-26,maria luiza rodrigues justin,Dev. Jogos,Vespertino,p,p,P,p,F
-27,agatha leitao brum,Dev. Jogos,Vespertino,p,p,P,p,P
-28,winicius moraes de moura,Dev. Jogos,Vespertino,f,p,P,p,P
-29,yuri leo baraldi,Dev. Jogos,Vespertino,f,f,P,p,P
-1,Aghata Cristy,PC Gamer,Vespertino,P,P,P,P,F
-2,Alice vitoria de machado alves,PC Gamer,Vespertino,P,P,P,F,P
-3,Anderson junior dos santos alves,PC Gamer,Vespertino,P,P,P,P,P
-4,Davi peixoto ferreira,PC Gamer,Vespertino,P,P,P,P,P
-5,Elis Regina Dos Santos Cabral,PC Gamer,Vespertino,P,P,P,P,P
-6,flavia soares pires,PC Gamer,Vespertino,P,P,P,F,P
-7,henrique fiuza da silva hernandes,PC Gamer,Vespertino,P,P,P,P,F
-8,Jenifer oliveira carvalho,PC Gamer,Vespertino,P,P,P,P,P
-9,Kamila Larissa de Almeida Maciel,PC Gamer,Vespertino,P,P,P,P,P
-10,leonardo machado silveira da silveira,PC Gamer,Vespertino,P,P,P,P,P
-11,luiz feliphe biermann da rosa,PC Gamer,Vespertino,P,P,P,P,P
-12,Matheus Alexandre Fernandes Benites,PC Gamer,Vespertino,P,P,P,F,P
-13,miguel alexande solozano riva,PC Gamer,Vespertino,P,P,P,P,P
-14,MURYLO FABIANO SANTOS DOS SANTOS,PC Gamer,Vespertino,P,P,P,P,P
-15,rafael ferreira valladares,PC Gamer,Vespertino,P,P,P,P,P
-16,Rafael Vieira Greiner,PC Gamer,Vespertino,P,P,P,P,P
-17,ryamsantoscamara,PC Gamer,Vespertino,P,P,P,P,F
-18,Vitor Rocha de Moura,PC Gamer,Vespertino,P,P,P,P,P
-19,Leonardo vieira kraus dos santos,PC Gamer,Vespertino,f,p,P,P,P
+Nº ALUNOS,ALUNOS,CPF,CURSO,TURNO,10/3,11/3,12/3,13/3,14/3
+1,ALISSON ANTONIO DA SILVA DE SOUZA,096.790.501-06,PC Gamer,Matutino,P,P,P,P,p
+2,MARCELO EDUARDO COSTA DE SOUZA,073.495.581-20,PC Gamer,Matutino,P,P,P,F,p
+3,GUILHERME NUNES PEREIRA,095.502.311-43,PC Gamer,Matutino,P,P,P,P,p
+4,MANUELA FERREIRA MORAES,114.606.811-50,PC Gamer,Matutino,P,P,P,P,p
+5,BRUNA DE CAMARGO SILVA,095.231.911-01,PC Gamer,Matutino,F,F,F,P,p
+6,RAYLINE MORAES MONTEIRO DOS SANTOS,112.703.081-73,PC Gamer,Matutino,P,P,P,P,p
+7,PEDRO HENRIQUE MARGARIDO BERIGO,103.682.851-46,PC Gamer,Matutino,P,P,P,P,p
+8,GUSTAVO GABRIEL MARTINS DE SOUZA,107.536.281-47,PC Gamer,Matutino,P,P,P,P,p
+9,ALBERTO DECIO,100.509.511-65,PC Gamer,Matutino,P,P,P,P,p
+10,HANNA LARISSA MOURA BRITO,116.029.311-27,PC Gamer,Matutino,P,P,F,F,p
+11,NICOLLY GIOVANA DA SILVA,091.883.111-39,PC Gamer,Matutino,P,P,P,P,p
+12,ISABELLI ALVES DE SOUZA FELIPE,116.785.641-41,PC Gamer,Matutino,P,P,P,P,p
+13,MÁRCIO ANDRÉ VITOR FILHO,,PC Gamer,Matutino,P,P,P,P,p
+14,FAGNER AQUINO PEREIRA,095.312.321-99,PC Gamer,Matutino,P,F,P,P,p
+15,MIGUEL BORBA RODRIGUES,170.683.527-23,PC Gamer,Matutino,P,F,P,P,p
+16,DAVI RAPHAEL ALVES SANTANA,094.261.581-62,PC Gamer,Matutino,P,F,P,P,p
+17,MAYARA DA SILVA MOURA,115.078.111-44,PC Gamer,Matutino,P,P,P,P,p
+18,REBECA VITÓRIA RAMOS DE ARRUDA,037.468.951-20,PC Gamer,Matutino,P,P,P,P,p
+19,MICHEL RAMON LOPES VILALBA,104.922.881-27,PC Gamer,Matutino,F,F,P,P,p
+20,VINICIUS DE ALBUQUERQUE SOUZA,101.446.701-27,PC Gamer,Matutino,P,P,P,P,p
+21,JOÃO PEDRO VILHALVA DE SÁ,080.773.781-02,PC Gamer,Matutino,P,P,P,P,p
+22,ANAY EDUARDA MARÇAL CASAIS,096.361.851-23,PC Gamer,Matutino,P,P,P,P,p
+23,ANA JULIA MARQUES DE ARAÚJO,107.083.371-12,PC Gamer,Matutino,P,P,P,P,p
+24,PEDRO HENRIQUE OJEDA DE LUCAS,113.931.591-92,PC Gamer,Matutino,P,P,P,P,p
+25,YGOR CONCEIÇÃO DA SILVA,105.248.081-88,PC Gamer,Matutino,P,P,P,P,p
+26,EDSON IORI LIMA DA SILVA,020.717.971-91,PC Gamer,Matutino,P,P,P,P,p
+27,JEAN CARLOS LIMA LEAL,094.898.691-39,PC Gamer,Matutino,P,P,P,P,p
+28,PIETRO OTÁVIO DA SILVA MARTINS,103.459.331-50,PC Gamer,Matutino,P,P,P,P,p
+29,VICTOR OLIVEIRA BENITEZ,123.607.181-23,PC Gamer,Matutino,P,P,P,P,p
+30,HELOYSE DA SILVA MARTINS,,PC Gamer,Matutino,F,F,F,F,p
+31,SILVANA VIEIRA DA SILVA (prof),015.434.751-59,PC Gamer,Matutino,P,P,P,P,p
+32,Ikaro vinicius da silva souza,146.874.984-69,PC Gamer,Matutino,P,F,P,F,p
+33,Maria Aparecidas Martins Barros (Prof),583.590.361-87,PC Gamer,Matutino,P,F,P,P,p
+33,Enzo Margarido Berigo,113.931.521-80,PC Gamer,Matutino,F,P,P,P,p
