@@ -9,3 +9,5 @@
 # Bibliotecas externas necessárias:
 pandas==2.1.1
 openpyxl==3.1.2
+
+

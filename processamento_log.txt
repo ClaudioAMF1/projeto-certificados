@@ -1,37 +1,901 @@
-[2025-03-13 16:56:14] Iniciando processamento de inscrições
-[2025-03-13 16:56:14] Arquivo de inscrição lido com sucesso. 27 inscrições encontradas.
-[2025-03-13 16:56:14] Dados convertidos para processamento. Iniciando correspondência de alunos.
-[2025-03-13 16:56:14] Processando alunos aprovados em lotes de 500
-[2025-03-13 16:56:14] Processando lote 1 (32 alunos)
-[2025-03-13 16:56:14] Correspondência encontrada para ALISSON ANTONIO DA SILVA DE SOUZA - PC Gamer (similaridade: 1.00)
-[2025-03-13 16:56:14] Correspondência encontrada para MARCELO EDUARDO COSTA DE SOUZA - PC Gamer (similaridade: 1.00)
-[2025-03-13 16:56:14] Não foi encontrada inscrição para: GUILHERME NUNES PEREIRA - PC Gamer
-[2025-03-13 16:56:14] Correspondência encontrada para MANUELA FERREIRA MORAES - PC Gamer (similaridade: 1.00)
-[2025-03-13 16:56:14] Correspondência encontrada para RAYLINE MORAES MONTEIRO DOS SANTOS - PC Gamer (similaridade: 1.00)
-[2025-03-13 16:56:14] Correspondência encontrada para PEDRO HENRIQUE MARGARIDO BERIGO - PC Gamer (similaridade: 0.97)
-[2025-03-13 16:56:14] Correspondência encontrada para GUSTAVO GABRIEL MARTINS DE SOUZA - PC Gamer (similaridade: 1.00)
-[2025-03-13 16:56:14] Correspondência encontrada para ALBERTO DECIO - PC Gamer (similaridade: 1.00)
-[2025-03-13 16:56:14] Correspondência encontrada para HANNA LARISSA MOURA BRITO - PC Gamer (similaridade: 1.00)
-[2025-03-13 16:56:14] Correspondência encontrada para NICOLLY GIOVANA DA SILVA - PC Gamer (similaridade: 1.00)
-[2025-03-13 16:56:14] Correspondência encontrada para ISABELLI ALVES DE SOUZA FELIPE - PC Gamer (similaridade: 1.00)
-[2025-03-13 16:56:14] Correspondência encontrada para MÁRCIO ANDRÉ VITOR FILHO - PC Gamer (similaridade: 1.00)
-[2025-03-13 16:56:14] Correspondência encontrada para FAGNER AQUINO PEREIRA - PC Gamer (similaridade: 1.00)
-[2025-03-13 16:56:14] Correspondência encontrada para MIGUEL BORBA RODRIGUES - PC Gamer (similaridade: 1.00)
-[2025-03-13 16:56:14] Correspondência encontrada para DAVI RAPHAEL ALVES SANTANA - PC Gamer (similaridade: 1.00)
-[2025-03-13 16:56:14] Correspondência encontrada para MAYARA DA SILVA MOURA - PC Gamer (similaridade: 1.00)
-[2025-03-13 16:56:14] Correspondência encontrada para REBECA VITÓRIA RAMOS DE ARRUDA - PC Gamer (similaridade: 1.00)
-[2025-03-13 16:56:14] Não foi encontrada inscrição para: MICHEL RAMON LOPES VILALBA - PC Gamer
-[2025-03-13 16:56:14] Correspondência encontrada para VINICIUS DE ALBUQUERQUE SOUZA - PC Gamer (similaridade: 1.00)
-[2025-03-13 16:56:14] Não foi encontrada inscrição para: JOÃO PEDRO VILHALVA DE SÁ - PC Gamer
-[2025-03-13 16:56:14] Correspondência encontrada para ANAY EDUARDA MARÇAL CASAIS - PC Gamer (similaridade: 1.00)
-[2025-03-13 16:56:14] Correspondência encontrada para ANA JULIA MARQUES DE ARAÚJO - PC Gamer (similaridade: 1.00)
-[2025-03-13 16:56:14] Correspondência encontrada para PEDRO HENRIQUE OJEDA DE LUCAS - PC Gamer (similaridade: 1.00)
-[2025-03-13 16:56:14] Correspondência encontrada para YGOR CONCEIÇÃO DA SILVA - PC Gamer (similaridade: 1.00)
-[2025-03-13 16:56:14] Correspondência encontrada para EDSON IORI LIMA DA SILVA - PC Gamer (similaridade: 0.92)
-[2025-03-13 16:56:14] Correspondência encontrada para JEAN CARLOS LIMA LEAL - PC Gamer (similaridade: 1.00)
-[2025-03-13 16:56:14] Correspondência encontrada para PIETRO OTÁVIO DA SILVA MARTINS - PC Gamer (similaridade: 1.00)
-[2025-03-13 16:56:14] Correspondência encontrada para VICTOR OLIVEIRA BENITEZ - PC Gamer (similaridade: 1.00)
-[2025-03-13 16:56:14] Correspondência encontrada para SILVANA VIEIRA DA SILVA (prof) - PC Gamer (similaridade: 1.00)
-[2025-03-13 16:56:14] Correspondência encontrada para Ikaro vinicius da silva souza - PC Gamer (similaridade: 1.00)
-[2025-03-13 16:56:14] Não foi encontrada inscrição para: Maria Aparecidas Martins Barros (Prof) - PC Gamer
-[2025-03-13 16:56:14] Correspondência encontrada para Enzo Margarido Berigo - PC Gamer (similaridade: 0.73)
+[2025-03-13 21:24:45] Iniciando processamento de inscrições
+[2025-03-13 21:24:45] Arquivo de inscrição lido com sucesso. 27 inscrições encontradas.
+[2025-03-13 21:24:45] Dados convertidos para processamento. Iniciando correspondência de alunos.
+[2025-03-13 21:24:45] Processando alunos aprovados em lotes de 500
+[2025-03-13 21:24:45] Processando lote 1 (32 alunos)
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALISSON ANTONIO DA SILVA DE SOUZA vs victor oliveira benitez - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALISSON ANTONIO DA SILVA DE SOUZA vs marcio andre vitor filho - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALISSON ANTONIO DA SILVA DE SOUZA vs HANNA LARISSA MOURA BRITO  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALISSON ANTONIO DA SILVA DE SOUZA vs Alisson Antonio da Silva De Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALISSON ANTONIO DA SILVA DE SOUZA vs GUSTAVO GABRIEL MARTINS DE SOUZA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALISSON ANTONIO DA SILVA DE SOUZA vs ISABELLI ALVES DE SOUZA FELIPE  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALISSON ANTONIO DA SILVA DE SOUZA vs Ana Julia Marques de Araujo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALISSON ANTONIO DA SILVA DE SOUZA vs Nicolly Giovana Da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALISSON ANTONIO DA SILVA DE SOUZA vs anay eduarda marcal casais - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALISSON ANTONIO DA SILVA DE SOUZA vs Vinicíus de Albuquerque Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALISSON ANTONIO DA SILVA DE SOUZA vs Marcelo Eduardo Costa de Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALISSON ANTONIO DA SILVA DE SOUZA vs Davi Raphael Alves Santana - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALISSON ANTONIO DA SILVA DE SOUZA vs mayara da silva moura - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALISSON ANTONIO DA SILVA DE SOUZA vs Rayline Moraes Monteiro Dos Santos - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALISSON ANTONIO DA SILVA DE SOUZA vs SILVANA VIEIRA DA SILVA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALISSON ANTONIO DA SILVA DE SOUZA vs Miguel Borba Rodrigues  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALISSON ANTONIO DA SILVA DE SOUZA vs Manuela Ferreira Moraes - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALISSON ANTONIO DA SILVA DE SOUZA vs alberto decio - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALISSON ANTONIO DA SILVA DE SOUZA vs PIETRO OTAVIO DA SILVA MARTINS - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALISSON ANTONIO DA SILVA DE SOUZA vs EDSON IORE LIMA DA SALVA  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALISSON ANTONIO DA SILVA DE SOUZA vs fagner aquino pereira - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALISSON ANTONIO DA SILVA DE SOUZA vs Ikaro vinicius da silva souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALISSON ANTONIO DA SILVA DE SOUZA vs Pedro  Herinque Margarido Berigo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALISSON ANTONIO DA SILVA DE SOUZA vs REBECA VITORIA RAMOS DE ARRUDA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALISSON ANTONIO DA SILVA DE SOUZA vs Ygor Conceicao da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALISSON ANTONIO DA SILVA DE SOUZA vs Jean Carlos Lima Leal - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALISSON ANTONIO DA SILVA DE SOUZA vs Pedro Henrique Ojeda de Lucas - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Correspondência parcial para ALISSON ANTONIO DA SILVA DE SOUZA - PC Gamer (melhor similaridade: 0.00)
+[2025-03-13 21:24:45] Erro ao comparar nomes: MARCELO EDUARDO COSTA DE SOUZA vs victor oliveira benitez - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MARCELO EDUARDO COSTA DE SOUZA vs marcio andre vitor filho - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MARCELO EDUARDO COSTA DE SOUZA vs HANNA LARISSA MOURA BRITO  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MARCELO EDUARDO COSTA DE SOUZA vs Alisson Antonio da Silva De Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MARCELO EDUARDO COSTA DE SOUZA vs GUSTAVO GABRIEL MARTINS DE SOUZA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MARCELO EDUARDO COSTA DE SOUZA vs ISABELLI ALVES DE SOUZA FELIPE  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MARCELO EDUARDO COSTA DE SOUZA vs Ana Julia Marques de Araujo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MARCELO EDUARDO COSTA DE SOUZA vs Nicolly Giovana Da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MARCELO EDUARDO COSTA DE SOUZA vs anay eduarda marcal casais - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MARCELO EDUARDO COSTA DE SOUZA vs Vinicíus de Albuquerque Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MARCELO EDUARDO COSTA DE SOUZA vs Marcelo Eduardo Costa de Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MARCELO EDUARDO COSTA DE SOUZA vs Davi Raphael Alves Santana - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MARCELO EDUARDO COSTA DE SOUZA vs mayara da silva moura - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MARCELO EDUARDO COSTA DE SOUZA vs Rayline Moraes Monteiro Dos Santos - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MARCELO EDUARDO COSTA DE SOUZA vs SILVANA VIEIRA DA SILVA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MARCELO EDUARDO COSTA DE SOUZA vs Miguel Borba Rodrigues  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MARCELO EDUARDO COSTA DE SOUZA vs Manuela Ferreira Moraes - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MARCELO EDUARDO COSTA DE SOUZA vs alberto decio - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MARCELO EDUARDO COSTA DE SOUZA vs PIETRO OTAVIO DA SILVA MARTINS - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MARCELO EDUARDO COSTA DE SOUZA vs EDSON IORE LIMA DA SALVA  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MARCELO EDUARDO COSTA DE SOUZA vs fagner aquino pereira - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MARCELO EDUARDO COSTA DE SOUZA vs Ikaro vinicius da silva souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MARCELO EDUARDO COSTA DE SOUZA vs Pedro  Herinque Margarido Berigo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MARCELO EDUARDO COSTA DE SOUZA vs REBECA VITORIA RAMOS DE ARRUDA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MARCELO EDUARDO COSTA DE SOUZA vs Ygor Conceicao da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MARCELO EDUARDO COSTA DE SOUZA vs Jean Carlos Lima Leal - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MARCELO EDUARDO COSTA DE SOUZA vs Pedro Henrique Ojeda de Lucas - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Correspondência parcial para MARCELO EDUARDO COSTA DE SOUZA - PC Gamer (melhor similaridade: 0.00)
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUILHERME NUNES PEREIRA vs victor oliveira benitez - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUILHERME NUNES PEREIRA vs marcio andre vitor filho - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUILHERME NUNES PEREIRA vs HANNA LARISSA MOURA BRITO  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUILHERME NUNES PEREIRA vs Alisson Antonio da Silva De Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUILHERME NUNES PEREIRA vs GUSTAVO GABRIEL MARTINS DE SOUZA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUILHERME NUNES PEREIRA vs ISABELLI ALVES DE SOUZA FELIPE  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUILHERME NUNES PEREIRA vs Ana Julia Marques de Araujo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUILHERME NUNES PEREIRA vs Nicolly Giovana Da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUILHERME NUNES PEREIRA vs anay eduarda marcal casais - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUILHERME NUNES PEREIRA vs Vinicíus de Albuquerque Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUILHERME NUNES PEREIRA vs Marcelo Eduardo Costa de Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUILHERME NUNES PEREIRA vs Davi Raphael Alves Santana - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUILHERME NUNES PEREIRA vs mayara da silva moura - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUILHERME NUNES PEREIRA vs Rayline Moraes Monteiro Dos Santos - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUILHERME NUNES PEREIRA vs SILVANA VIEIRA DA SILVA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUILHERME NUNES PEREIRA vs Miguel Borba Rodrigues  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUILHERME NUNES PEREIRA vs Manuela Ferreira Moraes - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUILHERME NUNES PEREIRA vs alberto decio - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUILHERME NUNES PEREIRA vs PIETRO OTAVIO DA SILVA MARTINS - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUILHERME NUNES PEREIRA vs EDSON IORE LIMA DA SALVA  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUILHERME NUNES PEREIRA vs fagner aquino pereira - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUILHERME NUNES PEREIRA vs Ikaro vinicius da silva souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUILHERME NUNES PEREIRA vs Pedro  Herinque Margarido Berigo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUILHERME NUNES PEREIRA vs REBECA VITORIA RAMOS DE ARRUDA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUILHERME NUNES PEREIRA vs Ygor Conceicao da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUILHERME NUNES PEREIRA vs Jean Carlos Lima Leal - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUILHERME NUNES PEREIRA vs Pedro Henrique Ojeda de Lucas - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Não foi encontrada inscrição para: GUILHERME NUNES PEREIRA - PC Gamer
+[2025-03-13 21:24:45] Erro ao comparar nomes: MANUELA FERREIRA MORAES vs victor oliveira benitez - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MANUELA FERREIRA MORAES vs marcio andre vitor filho - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MANUELA FERREIRA MORAES vs HANNA LARISSA MOURA BRITO  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MANUELA FERREIRA MORAES vs Alisson Antonio da Silva De Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MANUELA FERREIRA MORAES vs GUSTAVO GABRIEL MARTINS DE SOUZA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MANUELA FERREIRA MORAES vs ISABELLI ALVES DE SOUZA FELIPE  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MANUELA FERREIRA MORAES vs Ana Julia Marques de Araujo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MANUELA FERREIRA MORAES vs Nicolly Giovana Da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MANUELA FERREIRA MORAES vs anay eduarda marcal casais - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MANUELA FERREIRA MORAES vs Vinicíus de Albuquerque Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MANUELA FERREIRA MORAES vs Marcelo Eduardo Costa de Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MANUELA FERREIRA MORAES vs Davi Raphael Alves Santana - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MANUELA FERREIRA MORAES vs mayara da silva moura - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MANUELA FERREIRA MORAES vs Rayline Moraes Monteiro Dos Santos - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MANUELA FERREIRA MORAES vs SILVANA VIEIRA DA SILVA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MANUELA FERREIRA MORAES vs Miguel Borba Rodrigues  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MANUELA FERREIRA MORAES vs Manuela Ferreira Moraes - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MANUELA FERREIRA MORAES vs alberto decio - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MANUELA FERREIRA MORAES vs PIETRO OTAVIO DA SILVA MARTINS - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MANUELA FERREIRA MORAES vs EDSON IORE LIMA DA SALVA  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MANUELA FERREIRA MORAES vs fagner aquino pereira - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MANUELA FERREIRA MORAES vs Ikaro vinicius da silva souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MANUELA FERREIRA MORAES vs Pedro  Herinque Margarido Berigo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MANUELA FERREIRA MORAES vs REBECA VITORIA RAMOS DE ARRUDA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MANUELA FERREIRA MORAES vs Ygor Conceicao da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MANUELA FERREIRA MORAES vs Jean Carlos Lima Leal - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MANUELA FERREIRA MORAES vs Pedro Henrique Ojeda de Lucas - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Correspondência parcial para MANUELA FERREIRA MORAES - PC Gamer (melhor similaridade: 0.00)
+[2025-03-13 21:24:45] Erro ao comparar nomes: RAYLINE MORAES MONTEIRO DOS SANTOS vs victor oliveira benitez - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: RAYLINE MORAES MONTEIRO DOS SANTOS vs marcio andre vitor filho - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: RAYLINE MORAES MONTEIRO DOS SANTOS vs HANNA LARISSA MOURA BRITO  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: RAYLINE MORAES MONTEIRO DOS SANTOS vs Alisson Antonio da Silva De Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: RAYLINE MORAES MONTEIRO DOS SANTOS vs GUSTAVO GABRIEL MARTINS DE SOUZA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: RAYLINE MORAES MONTEIRO DOS SANTOS vs ISABELLI ALVES DE SOUZA FELIPE  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: RAYLINE MORAES MONTEIRO DOS SANTOS vs Ana Julia Marques de Araujo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: RAYLINE MORAES MONTEIRO DOS SANTOS vs Nicolly Giovana Da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: RAYLINE MORAES MONTEIRO DOS SANTOS vs anay eduarda marcal casais - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: RAYLINE MORAES MONTEIRO DOS SANTOS vs Vinicíus de Albuquerque Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: RAYLINE MORAES MONTEIRO DOS SANTOS vs Marcelo Eduardo Costa de Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: RAYLINE MORAES MONTEIRO DOS SANTOS vs Davi Raphael Alves Santana - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: RAYLINE MORAES MONTEIRO DOS SANTOS vs mayara da silva moura - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: RAYLINE MORAES MONTEIRO DOS SANTOS vs Rayline Moraes Monteiro Dos Santos - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: RAYLINE MORAES MONTEIRO DOS SANTOS vs SILVANA VIEIRA DA SILVA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: RAYLINE MORAES MONTEIRO DOS SANTOS vs Miguel Borba Rodrigues  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: RAYLINE MORAES MONTEIRO DOS SANTOS vs Manuela Ferreira Moraes - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: RAYLINE MORAES MONTEIRO DOS SANTOS vs alberto decio - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: RAYLINE MORAES MONTEIRO DOS SANTOS vs PIETRO OTAVIO DA SILVA MARTINS - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: RAYLINE MORAES MONTEIRO DOS SANTOS vs EDSON IORE LIMA DA SALVA  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: RAYLINE MORAES MONTEIRO DOS SANTOS vs fagner aquino pereira - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: RAYLINE MORAES MONTEIRO DOS SANTOS vs Ikaro vinicius da silva souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: RAYLINE MORAES MONTEIRO DOS SANTOS vs Pedro  Herinque Margarido Berigo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: RAYLINE MORAES MONTEIRO DOS SANTOS vs REBECA VITORIA RAMOS DE ARRUDA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: RAYLINE MORAES MONTEIRO DOS SANTOS vs Ygor Conceicao da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: RAYLINE MORAES MONTEIRO DOS SANTOS vs Jean Carlos Lima Leal - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: RAYLINE MORAES MONTEIRO DOS SANTOS vs Pedro Henrique Ojeda de Lucas - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Correspondência parcial para RAYLINE MORAES MONTEIRO DOS SANTOS - PC Gamer (melhor similaridade: 0.00)
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE MARGARIDO BERIGO vs victor oliveira benitez - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE MARGARIDO BERIGO vs marcio andre vitor filho - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE MARGARIDO BERIGO vs HANNA LARISSA MOURA BRITO  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE MARGARIDO BERIGO vs Alisson Antonio da Silva De Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE MARGARIDO BERIGO vs GUSTAVO GABRIEL MARTINS DE SOUZA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE MARGARIDO BERIGO vs ISABELLI ALVES DE SOUZA FELIPE  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE MARGARIDO BERIGO vs Ana Julia Marques de Araujo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE MARGARIDO BERIGO vs Nicolly Giovana Da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE MARGARIDO BERIGO vs anay eduarda marcal casais - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE MARGARIDO BERIGO vs Vinicíus de Albuquerque Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE MARGARIDO BERIGO vs Marcelo Eduardo Costa de Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE MARGARIDO BERIGO vs Davi Raphael Alves Santana - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE MARGARIDO BERIGO vs mayara da silva moura - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE MARGARIDO BERIGO vs Rayline Moraes Monteiro Dos Santos - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE MARGARIDO BERIGO vs SILVANA VIEIRA DA SILVA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE MARGARIDO BERIGO vs Miguel Borba Rodrigues  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE MARGARIDO BERIGO vs Manuela Ferreira Moraes - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE MARGARIDO BERIGO vs alberto decio - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE MARGARIDO BERIGO vs PIETRO OTAVIO DA SILVA MARTINS - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE MARGARIDO BERIGO vs EDSON IORE LIMA DA SALVA  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE MARGARIDO BERIGO vs fagner aquino pereira - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE MARGARIDO BERIGO vs Ikaro vinicius da silva souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE MARGARIDO BERIGO vs Pedro  Herinque Margarido Berigo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE MARGARIDO BERIGO vs REBECA VITORIA RAMOS DE ARRUDA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE MARGARIDO BERIGO vs Ygor Conceicao da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE MARGARIDO BERIGO vs Jean Carlos Lima Leal - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE MARGARIDO BERIGO vs Pedro Henrique Ojeda de Lucas - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Correspondência parcial para PEDRO HENRIQUE MARGARIDO BERIGO - PC Gamer (melhor similaridade: 0.00)
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUSTAVO GABRIEL MARTINS DE SOUZA vs victor oliveira benitez - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUSTAVO GABRIEL MARTINS DE SOUZA vs marcio andre vitor filho - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUSTAVO GABRIEL MARTINS DE SOUZA vs HANNA LARISSA MOURA BRITO  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUSTAVO GABRIEL MARTINS DE SOUZA vs Alisson Antonio da Silva De Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUSTAVO GABRIEL MARTINS DE SOUZA vs GUSTAVO GABRIEL MARTINS DE SOUZA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUSTAVO GABRIEL MARTINS DE SOUZA vs ISABELLI ALVES DE SOUZA FELIPE  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUSTAVO GABRIEL MARTINS DE SOUZA vs Ana Julia Marques de Araujo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUSTAVO GABRIEL MARTINS DE SOUZA vs Nicolly Giovana Da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUSTAVO GABRIEL MARTINS DE SOUZA vs anay eduarda marcal casais - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUSTAVO GABRIEL MARTINS DE SOUZA vs Vinicíus de Albuquerque Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUSTAVO GABRIEL MARTINS DE SOUZA vs Marcelo Eduardo Costa de Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUSTAVO GABRIEL MARTINS DE SOUZA vs Davi Raphael Alves Santana - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUSTAVO GABRIEL MARTINS DE SOUZA vs mayara da silva moura - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUSTAVO GABRIEL MARTINS DE SOUZA vs Rayline Moraes Monteiro Dos Santos - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUSTAVO GABRIEL MARTINS DE SOUZA vs SILVANA VIEIRA DA SILVA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUSTAVO GABRIEL MARTINS DE SOUZA vs Miguel Borba Rodrigues  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUSTAVO GABRIEL MARTINS DE SOUZA vs Manuela Ferreira Moraes - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUSTAVO GABRIEL MARTINS DE SOUZA vs alberto decio - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUSTAVO GABRIEL MARTINS DE SOUZA vs PIETRO OTAVIO DA SILVA MARTINS - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUSTAVO GABRIEL MARTINS DE SOUZA vs EDSON IORE LIMA DA SALVA  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUSTAVO GABRIEL MARTINS DE SOUZA vs fagner aquino pereira - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUSTAVO GABRIEL MARTINS DE SOUZA vs Ikaro vinicius da silva souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUSTAVO GABRIEL MARTINS DE SOUZA vs Pedro  Herinque Margarido Berigo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUSTAVO GABRIEL MARTINS DE SOUZA vs REBECA VITORIA RAMOS DE ARRUDA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUSTAVO GABRIEL MARTINS DE SOUZA vs Ygor Conceicao da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUSTAVO GABRIEL MARTINS DE SOUZA vs Jean Carlos Lima Leal - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: GUSTAVO GABRIEL MARTINS DE SOUZA vs Pedro Henrique Ojeda de Lucas - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Correspondência parcial para GUSTAVO GABRIEL MARTINS DE SOUZA - PC Gamer (melhor similaridade: 0.00)
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALBERTO DECIO vs victor oliveira benitez - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALBERTO DECIO vs marcio andre vitor filho - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALBERTO DECIO vs HANNA LARISSA MOURA BRITO  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALBERTO DECIO vs Alisson Antonio da Silva De Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALBERTO DECIO vs GUSTAVO GABRIEL MARTINS DE SOUZA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALBERTO DECIO vs ISABELLI ALVES DE SOUZA FELIPE  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALBERTO DECIO vs Ana Julia Marques de Araujo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALBERTO DECIO vs Nicolly Giovana Da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALBERTO DECIO vs anay eduarda marcal casais - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALBERTO DECIO vs Vinicíus de Albuquerque Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALBERTO DECIO vs Marcelo Eduardo Costa de Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALBERTO DECIO vs Davi Raphael Alves Santana - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALBERTO DECIO vs mayara da silva moura - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALBERTO DECIO vs Rayline Moraes Monteiro Dos Santos - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALBERTO DECIO vs SILVANA VIEIRA DA SILVA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALBERTO DECIO vs Miguel Borba Rodrigues  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALBERTO DECIO vs Manuela Ferreira Moraes - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALBERTO DECIO vs alberto decio - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALBERTO DECIO vs PIETRO OTAVIO DA SILVA MARTINS - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALBERTO DECIO vs EDSON IORE LIMA DA SALVA  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALBERTO DECIO vs fagner aquino pereira - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALBERTO DECIO vs Ikaro vinicius da silva souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALBERTO DECIO vs Pedro  Herinque Margarido Berigo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALBERTO DECIO vs REBECA VITORIA RAMOS DE ARRUDA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALBERTO DECIO vs Ygor Conceicao da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALBERTO DECIO vs Jean Carlos Lima Leal - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ALBERTO DECIO vs Pedro Henrique Ojeda de Lucas - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Correspondência parcial para ALBERTO DECIO - PC Gamer (melhor similaridade: 0.00)
+[2025-03-13 21:24:45] Erro ao comparar nomes: HANNA LARISSA MOURA BRITO vs victor oliveira benitez - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: HANNA LARISSA MOURA BRITO vs marcio andre vitor filho - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: HANNA LARISSA MOURA BRITO vs HANNA LARISSA MOURA BRITO  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: HANNA LARISSA MOURA BRITO vs Alisson Antonio da Silva De Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: HANNA LARISSA MOURA BRITO vs GUSTAVO GABRIEL MARTINS DE SOUZA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: HANNA LARISSA MOURA BRITO vs ISABELLI ALVES DE SOUZA FELIPE  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: HANNA LARISSA MOURA BRITO vs Ana Julia Marques de Araujo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: HANNA LARISSA MOURA BRITO vs Nicolly Giovana Da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: HANNA LARISSA MOURA BRITO vs anay eduarda marcal casais - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: HANNA LARISSA MOURA BRITO vs Vinicíus de Albuquerque Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: HANNA LARISSA MOURA BRITO vs Marcelo Eduardo Costa de Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: HANNA LARISSA MOURA BRITO vs Davi Raphael Alves Santana - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: HANNA LARISSA MOURA BRITO vs mayara da silva moura - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: HANNA LARISSA MOURA BRITO vs Rayline Moraes Monteiro Dos Santos - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: HANNA LARISSA MOURA BRITO vs SILVANA VIEIRA DA SILVA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: HANNA LARISSA MOURA BRITO vs Miguel Borba Rodrigues  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: HANNA LARISSA MOURA BRITO vs Manuela Ferreira Moraes - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: HANNA LARISSA MOURA BRITO vs alberto decio - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: HANNA LARISSA MOURA BRITO vs PIETRO OTAVIO DA SILVA MARTINS - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: HANNA LARISSA MOURA BRITO vs EDSON IORE LIMA DA SALVA  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: HANNA LARISSA MOURA BRITO vs fagner aquino pereira - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: HANNA LARISSA MOURA BRITO vs Ikaro vinicius da silva souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: HANNA LARISSA MOURA BRITO vs Pedro  Herinque Margarido Berigo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: HANNA LARISSA MOURA BRITO vs REBECA VITORIA RAMOS DE ARRUDA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: HANNA LARISSA MOURA BRITO vs Ygor Conceicao da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: HANNA LARISSA MOURA BRITO vs Jean Carlos Lima Leal - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: HANNA LARISSA MOURA BRITO vs Pedro Henrique Ojeda de Lucas - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Correspondência parcial para HANNA LARISSA MOURA BRITO - PC Gamer (melhor similaridade: 0.00)
+[2025-03-13 21:24:45] Erro ao comparar nomes: NICOLLY GIOVANA DA SILVA vs victor oliveira benitez - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: NICOLLY GIOVANA DA SILVA vs marcio andre vitor filho - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: NICOLLY GIOVANA DA SILVA vs HANNA LARISSA MOURA BRITO  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: NICOLLY GIOVANA DA SILVA vs Alisson Antonio da Silva De Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: NICOLLY GIOVANA DA SILVA vs GUSTAVO GABRIEL MARTINS DE SOUZA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: NICOLLY GIOVANA DA SILVA vs ISABELLI ALVES DE SOUZA FELIPE  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: NICOLLY GIOVANA DA SILVA vs Ana Julia Marques de Araujo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: NICOLLY GIOVANA DA SILVA vs Nicolly Giovana Da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: NICOLLY GIOVANA DA SILVA vs anay eduarda marcal casais - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: NICOLLY GIOVANA DA SILVA vs Vinicíus de Albuquerque Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: NICOLLY GIOVANA DA SILVA vs Marcelo Eduardo Costa de Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: NICOLLY GIOVANA DA SILVA vs Davi Raphael Alves Santana - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: NICOLLY GIOVANA DA SILVA vs mayara da silva moura - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: NICOLLY GIOVANA DA SILVA vs Rayline Moraes Monteiro Dos Santos - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: NICOLLY GIOVANA DA SILVA vs SILVANA VIEIRA DA SILVA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: NICOLLY GIOVANA DA SILVA vs Miguel Borba Rodrigues  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: NICOLLY GIOVANA DA SILVA vs Manuela Ferreira Moraes - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: NICOLLY GIOVANA DA SILVA vs alberto decio - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: NICOLLY GIOVANA DA SILVA vs PIETRO OTAVIO DA SILVA MARTINS - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: NICOLLY GIOVANA DA SILVA vs EDSON IORE LIMA DA SALVA  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: NICOLLY GIOVANA DA SILVA vs fagner aquino pereira - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: NICOLLY GIOVANA DA SILVA vs Ikaro vinicius da silva souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: NICOLLY GIOVANA DA SILVA vs Pedro  Herinque Margarido Berigo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: NICOLLY GIOVANA DA SILVA vs REBECA VITORIA RAMOS DE ARRUDA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: NICOLLY GIOVANA DA SILVA vs Ygor Conceicao da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: NICOLLY GIOVANA DA SILVA vs Jean Carlos Lima Leal - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: NICOLLY GIOVANA DA SILVA vs Pedro Henrique Ojeda de Lucas - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Correspondência parcial para NICOLLY GIOVANA DA SILVA - PC Gamer (melhor similaridade: 0.00)
+[2025-03-13 21:24:45] Erro ao comparar nomes: ISABELLI ALVES DE SOUZA FELIPE vs victor oliveira benitez - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ISABELLI ALVES DE SOUZA FELIPE vs marcio andre vitor filho - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ISABELLI ALVES DE SOUZA FELIPE vs HANNA LARISSA MOURA BRITO  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ISABELLI ALVES DE SOUZA FELIPE vs Alisson Antonio da Silva De Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ISABELLI ALVES DE SOUZA FELIPE vs GUSTAVO GABRIEL MARTINS DE SOUZA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ISABELLI ALVES DE SOUZA FELIPE vs ISABELLI ALVES DE SOUZA FELIPE  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ISABELLI ALVES DE SOUZA FELIPE vs Ana Julia Marques de Araujo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ISABELLI ALVES DE SOUZA FELIPE vs Nicolly Giovana Da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ISABELLI ALVES DE SOUZA FELIPE vs anay eduarda marcal casais - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ISABELLI ALVES DE SOUZA FELIPE vs Vinicíus de Albuquerque Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ISABELLI ALVES DE SOUZA FELIPE vs Marcelo Eduardo Costa de Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ISABELLI ALVES DE SOUZA FELIPE vs Davi Raphael Alves Santana - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ISABELLI ALVES DE SOUZA FELIPE vs mayara da silva moura - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ISABELLI ALVES DE SOUZA FELIPE vs Rayline Moraes Monteiro Dos Santos - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ISABELLI ALVES DE SOUZA FELIPE vs SILVANA VIEIRA DA SILVA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ISABELLI ALVES DE SOUZA FELIPE vs Miguel Borba Rodrigues  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ISABELLI ALVES DE SOUZA FELIPE vs Manuela Ferreira Moraes - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ISABELLI ALVES DE SOUZA FELIPE vs alberto decio - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ISABELLI ALVES DE SOUZA FELIPE vs PIETRO OTAVIO DA SILVA MARTINS - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ISABELLI ALVES DE SOUZA FELIPE vs EDSON IORE LIMA DA SALVA  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ISABELLI ALVES DE SOUZA FELIPE vs fagner aquino pereira - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ISABELLI ALVES DE SOUZA FELIPE vs Ikaro vinicius da silva souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ISABELLI ALVES DE SOUZA FELIPE vs Pedro  Herinque Margarido Berigo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ISABELLI ALVES DE SOUZA FELIPE vs REBECA VITORIA RAMOS DE ARRUDA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ISABELLI ALVES DE SOUZA FELIPE vs Ygor Conceicao da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ISABELLI ALVES DE SOUZA FELIPE vs Jean Carlos Lima Leal - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ISABELLI ALVES DE SOUZA FELIPE vs Pedro Henrique Ojeda de Lucas - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Correspondência parcial para ISABELLI ALVES DE SOUZA FELIPE - PC Gamer (melhor similaridade: 0.00)
+[2025-03-13 21:24:45] Erro ao comparar nomes: MÁRCIO ANDRÉ VITOR FILHO vs victor oliveira benitez - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MÁRCIO ANDRÉ VITOR FILHO vs marcio andre vitor filho - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MÁRCIO ANDRÉ VITOR FILHO vs HANNA LARISSA MOURA BRITO  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MÁRCIO ANDRÉ VITOR FILHO vs Alisson Antonio da Silva De Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MÁRCIO ANDRÉ VITOR FILHO vs GUSTAVO GABRIEL MARTINS DE SOUZA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MÁRCIO ANDRÉ VITOR FILHO vs ISABELLI ALVES DE SOUZA FELIPE  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MÁRCIO ANDRÉ VITOR FILHO vs Ana Julia Marques de Araujo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MÁRCIO ANDRÉ VITOR FILHO vs Nicolly Giovana Da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MÁRCIO ANDRÉ VITOR FILHO vs anay eduarda marcal casais - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MÁRCIO ANDRÉ VITOR FILHO vs Vinicíus de Albuquerque Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MÁRCIO ANDRÉ VITOR FILHO vs Marcelo Eduardo Costa de Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MÁRCIO ANDRÉ VITOR FILHO vs Davi Raphael Alves Santana - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MÁRCIO ANDRÉ VITOR FILHO vs mayara da silva moura - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MÁRCIO ANDRÉ VITOR FILHO vs Rayline Moraes Monteiro Dos Santos - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MÁRCIO ANDRÉ VITOR FILHO vs SILVANA VIEIRA DA SILVA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MÁRCIO ANDRÉ VITOR FILHO vs Miguel Borba Rodrigues  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MÁRCIO ANDRÉ VITOR FILHO vs Manuela Ferreira Moraes - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MÁRCIO ANDRÉ VITOR FILHO vs alberto decio - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MÁRCIO ANDRÉ VITOR FILHO vs PIETRO OTAVIO DA SILVA MARTINS - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MÁRCIO ANDRÉ VITOR FILHO vs EDSON IORE LIMA DA SALVA  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MÁRCIO ANDRÉ VITOR FILHO vs fagner aquino pereira - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MÁRCIO ANDRÉ VITOR FILHO vs Ikaro vinicius da silva souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MÁRCIO ANDRÉ VITOR FILHO vs Pedro  Herinque Margarido Berigo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MÁRCIO ANDRÉ VITOR FILHO vs REBECA VITORIA RAMOS DE ARRUDA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MÁRCIO ANDRÉ VITOR FILHO vs Ygor Conceicao da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MÁRCIO ANDRÉ VITOR FILHO vs Jean Carlos Lima Leal - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MÁRCIO ANDRÉ VITOR FILHO vs Pedro Henrique Ojeda de Lucas - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Correspondência parcial para MÁRCIO ANDRÉ VITOR FILHO - PC Gamer (melhor similaridade: 0.00)
+[2025-03-13 21:24:45] Erro ao comparar nomes: FAGNER AQUINO PEREIRA vs victor oliveira benitez - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: FAGNER AQUINO PEREIRA vs marcio andre vitor filho - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: FAGNER AQUINO PEREIRA vs HANNA LARISSA MOURA BRITO  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: FAGNER AQUINO PEREIRA vs Alisson Antonio da Silva De Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: FAGNER AQUINO PEREIRA vs GUSTAVO GABRIEL MARTINS DE SOUZA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: FAGNER AQUINO PEREIRA vs ISABELLI ALVES DE SOUZA FELIPE  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: FAGNER AQUINO PEREIRA vs Ana Julia Marques de Araujo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: FAGNER AQUINO PEREIRA vs Nicolly Giovana Da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: FAGNER AQUINO PEREIRA vs anay eduarda marcal casais - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: FAGNER AQUINO PEREIRA vs Vinicíus de Albuquerque Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: FAGNER AQUINO PEREIRA vs Marcelo Eduardo Costa de Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: FAGNER AQUINO PEREIRA vs Davi Raphael Alves Santana - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: FAGNER AQUINO PEREIRA vs mayara da silva moura - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: FAGNER AQUINO PEREIRA vs Rayline Moraes Monteiro Dos Santos - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: FAGNER AQUINO PEREIRA vs SILVANA VIEIRA DA SILVA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: FAGNER AQUINO PEREIRA vs Miguel Borba Rodrigues  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: FAGNER AQUINO PEREIRA vs Manuela Ferreira Moraes - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: FAGNER AQUINO PEREIRA vs alberto decio - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: FAGNER AQUINO PEREIRA vs PIETRO OTAVIO DA SILVA MARTINS - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: FAGNER AQUINO PEREIRA vs EDSON IORE LIMA DA SALVA  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: FAGNER AQUINO PEREIRA vs fagner aquino pereira - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: FAGNER AQUINO PEREIRA vs Ikaro vinicius da silva souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: FAGNER AQUINO PEREIRA vs Pedro  Herinque Margarido Berigo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: FAGNER AQUINO PEREIRA vs REBECA VITORIA RAMOS DE ARRUDA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: FAGNER AQUINO PEREIRA vs Ygor Conceicao da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: FAGNER AQUINO PEREIRA vs Jean Carlos Lima Leal - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: FAGNER AQUINO PEREIRA vs Pedro Henrique Ojeda de Lucas - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Correspondência parcial para FAGNER AQUINO PEREIRA - PC Gamer (melhor similaridade: 0.00)
+[2025-03-13 21:24:45] Erro ao comparar nomes: MIGUEL BORBA RODRIGUES vs victor oliveira benitez - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MIGUEL BORBA RODRIGUES vs marcio andre vitor filho - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MIGUEL BORBA RODRIGUES vs HANNA LARISSA MOURA BRITO  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MIGUEL BORBA RODRIGUES vs Alisson Antonio da Silva De Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MIGUEL BORBA RODRIGUES vs GUSTAVO GABRIEL MARTINS DE SOUZA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MIGUEL BORBA RODRIGUES vs ISABELLI ALVES DE SOUZA FELIPE  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MIGUEL BORBA RODRIGUES vs Ana Julia Marques de Araujo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MIGUEL BORBA RODRIGUES vs Nicolly Giovana Da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MIGUEL BORBA RODRIGUES vs anay eduarda marcal casais - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MIGUEL BORBA RODRIGUES vs Vinicíus de Albuquerque Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MIGUEL BORBA RODRIGUES vs Marcelo Eduardo Costa de Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MIGUEL BORBA RODRIGUES vs Davi Raphael Alves Santana - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MIGUEL BORBA RODRIGUES vs mayara da silva moura - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MIGUEL BORBA RODRIGUES vs Rayline Moraes Monteiro Dos Santos - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MIGUEL BORBA RODRIGUES vs SILVANA VIEIRA DA SILVA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MIGUEL BORBA RODRIGUES vs Miguel Borba Rodrigues  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MIGUEL BORBA RODRIGUES vs Manuela Ferreira Moraes - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MIGUEL BORBA RODRIGUES vs alberto decio - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MIGUEL BORBA RODRIGUES vs PIETRO OTAVIO DA SILVA MARTINS - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MIGUEL BORBA RODRIGUES vs EDSON IORE LIMA DA SALVA  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MIGUEL BORBA RODRIGUES vs fagner aquino pereira - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MIGUEL BORBA RODRIGUES vs Ikaro vinicius da silva souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MIGUEL BORBA RODRIGUES vs Pedro  Herinque Margarido Berigo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MIGUEL BORBA RODRIGUES vs REBECA VITORIA RAMOS DE ARRUDA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MIGUEL BORBA RODRIGUES vs Ygor Conceicao da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MIGUEL BORBA RODRIGUES vs Jean Carlos Lima Leal - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MIGUEL BORBA RODRIGUES vs Pedro Henrique Ojeda de Lucas - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Correspondência parcial para MIGUEL BORBA RODRIGUES - PC Gamer (melhor similaridade: 0.00)
+[2025-03-13 21:24:45] Erro ao comparar nomes: DAVI RAPHAEL ALVES SANTANA vs victor oliveira benitez - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: DAVI RAPHAEL ALVES SANTANA vs marcio andre vitor filho - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: DAVI RAPHAEL ALVES SANTANA vs HANNA LARISSA MOURA BRITO  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: DAVI RAPHAEL ALVES SANTANA vs Alisson Antonio da Silva De Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: DAVI RAPHAEL ALVES SANTANA vs GUSTAVO GABRIEL MARTINS DE SOUZA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: DAVI RAPHAEL ALVES SANTANA vs ISABELLI ALVES DE SOUZA FELIPE  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: DAVI RAPHAEL ALVES SANTANA vs Ana Julia Marques de Araujo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: DAVI RAPHAEL ALVES SANTANA vs Nicolly Giovana Da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: DAVI RAPHAEL ALVES SANTANA vs anay eduarda marcal casais - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: DAVI RAPHAEL ALVES SANTANA vs Vinicíus de Albuquerque Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: DAVI RAPHAEL ALVES SANTANA vs Marcelo Eduardo Costa de Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: DAVI RAPHAEL ALVES SANTANA vs Davi Raphael Alves Santana - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: DAVI RAPHAEL ALVES SANTANA vs mayara da silva moura - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: DAVI RAPHAEL ALVES SANTANA vs Rayline Moraes Monteiro Dos Santos - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: DAVI RAPHAEL ALVES SANTANA vs SILVANA VIEIRA DA SILVA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: DAVI RAPHAEL ALVES SANTANA vs Miguel Borba Rodrigues  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: DAVI RAPHAEL ALVES SANTANA vs Manuela Ferreira Moraes - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: DAVI RAPHAEL ALVES SANTANA vs alberto decio - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: DAVI RAPHAEL ALVES SANTANA vs PIETRO OTAVIO DA SILVA MARTINS - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: DAVI RAPHAEL ALVES SANTANA vs EDSON IORE LIMA DA SALVA  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: DAVI RAPHAEL ALVES SANTANA vs fagner aquino pereira - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: DAVI RAPHAEL ALVES SANTANA vs Ikaro vinicius da silva souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: DAVI RAPHAEL ALVES SANTANA vs Pedro  Herinque Margarido Berigo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: DAVI RAPHAEL ALVES SANTANA vs REBECA VITORIA RAMOS DE ARRUDA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: DAVI RAPHAEL ALVES SANTANA vs Ygor Conceicao da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: DAVI RAPHAEL ALVES SANTANA vs Jean Carlos Lima Leal - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: DAVI RAPHAEL ALVES SANTANA vs Pedro Henrique Ojeda de Lucas - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Correspondência parcial para DAVI RAPHAEL ALVES SANTANA - PC Gamer (melhor similaridade: 0.00)
+[2025-03-13 21:24:45] Erro ao comparar nomes: MAYARA DA SILVA MOURA vs victor oliveira benitez - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MAYARA DA SILVA MOURA vs marcio andre vitor filho - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MAYARA DA SILVA MOURA vs HANNA LARISSA MOURA BRITO  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MAYARA DA SILVA MOURA vs Alisson Antonio da Silva De Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MAYARA DA SILVA MOURA vs GUSTAVO GABRIEL MARTINS DE SOUZA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MAYARA DA SILVA MOURA vs ISABELLI ALVES DE SOUZA FELIPE  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MAYARA DA SILVA MOURA vs Ana Julia Marques de Araujo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MAYARA DA SILVA MOURA vs Nicolly Giovana Da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MAYARA DA SILVA MOURA vs anay eduarda marcal casais - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MAYARA DA SILVA MOURA vs Vinicíus de Albuquerque Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MAYARA DA SILVA MOURA vs Marcelo Eduardo Costa de Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MAYARA DA SILVA MOURA vs Davi Raphael Alves Santana - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MAYARA DA SILVA MOURA vs mayara da silva moura - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MAYARA DA SILVA MOURA vs Rayline Moraes Monteiro Dos Santos - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MAYARA DA SILVA MOURA vs SILVANA VIEIRA DA SILVA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MAYARA DA SILVA MOURA vs Miguel Borba Rodrigues  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MAYARA DA SILVA MOURA vs Manuela Ferreira Moraes - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MAYARA DA SILVA MOURA vs alberto decio - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MAYARA DA SILVA MOURA vs PIETRO OTAVIO DA SILVA MARTINS - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MAYARA DA SILVA MOURA vs EDSON IORE LIMA DA SALVA  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MAYARA DA SILVA MOURA vs fagner aquino pereira - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MAYARA DA SILVA MOURA vs Ikaro vinicius da silva souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MAYARA DA SILVA MOURA vs Pedro  Herinque Margarido Berigo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MAYARA DA SILVA MOURA vs REBECA VITORIA RAMOS DE ARRUDA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MAYARA DA SILVA MOURA vs Ygor Conceicao da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MAYARA DA SILVA MOURA vs Jean Carlos Lima Leal - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MAYARA DA SILVA MOURA vs Pedro Henrique Ojeda de Lucas - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Correspondência parcial para MAYARA DA SILVA MOURA - PC Gamer (melhor similaridade: 0.00)
+[2025-03-13 21:24:45] Erro ao comparar nomes: REBECA VITÓRIA RAMOS DE ARRUDA vs victor oliveira benitez - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: REBECA VITÓRIA RAMOS DE ARRUDA vs marcio andre vitor filho - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: REBECA VITÓRIA RAMOS DE ARRUDA vs HANNA LARISSA MOURA BRITO  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: REBECA VITÓRIA RAMOS DE ARRUDA vs Alisson Antonio da Silva De Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: REBECA VITÓRIA RAMOS DE ARRUDA vs GUSTAVO GABRIEL MARTINS DE SOUZA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: REBECA VITÓRIA RAMOS DE ARRUDA vs ISABELLI ALVES DE SOUZA FELIPE  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: REBECA VITÓRIA RAMOS DE ARRUDA vs Ana Julia Marques de Araujo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: REBECA VITÓRIA RAMOS DE ARRUDA vs Nicolly Giovana Da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: REBECA VITÓRIA RAMOS DE ARRUDA vs anay eduarda marcal casais - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: REBECA VITÓRIA RAMOS DE ARRUDA vs Vinicíus de Albuquerque Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: REBECA VITÓRIA RAMOS DE ARRUDA vs Marcelo Eduardo Costa de Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: REBECA VITÓRIA RAMOS DE ARRUDA vs Davi Raphael Alves Santana - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: REBECA VITÓRIA RAMOS DE ARRUDA vs mayara da silva moura - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: REBECA VITÓRIA RAMOS DE ARRUDA vs Rayline Moraes Monteiro Dos Santos - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: REBECA VITÓRIA RAMOS DE ARRUDA vs SILVANA VIEIRA DA SILVA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: REBECA VITÓRIA RAMOS DE ARRUDA vs Miguel Borba Rodrigues  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: REBECA VITÓRIA RAMOS DE ARRUDA vs Manuela Ferreira Moraes - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: REBECA VITÓRIA RAMOS DE ARRUDA vs alberto decio - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: REBECA VITÓRIA RAMOS DE ARRUDA vs PIETRO OTAVIO DA SILVA MARTINS - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: REBECA VITÓRIA RAMOS DE ARRUDA vs EDSON IORE LIMA DA SALVA  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: REBECA VITÓRIA RAMOS DE ARRUDA vs fagner aquino pereira - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: REBECA VITÓRIA RAMOS DE ARRUDA vs Ikaro vinicius da silva souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: REBECA VITÓRIA RAMOS DE ARRUDA vs Pedro  Herinque Margarido Berigo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: REBECA VITÓRIA RAMOS DE ARRUDA vs REBECA VITORIA RAMOS DE ARRUDA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: REBECA VITÓRIA RAMOS DE ARRUDA vs Ygor Conceicao da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: REBECA VITÓRIA RAMOS DE ARRUDA vs Jean Carlos Lima Leal - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: REBECA VITÓRIA RAMOS DE ARRUDA vs Pedro Henrique Ojeda de Lucas - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Correspondência parcial para REBECA VITÓRIA RAMOS DE ARRUDA - PC Gamer (melhor similaridade: 0.00)
+[2025-03-13 21:24:45] Erro ao comparar nomes: MICHEL RAMON LOPES VILALBA vs victor oliveira benitez - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MICHEL RAMON LOPES VILALBA vs marcio andre vitor filho - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MICHEL RAMON LOPES VILALBA vs HANNA LARISSA MOURA BRITO  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MICHEL RAMON LOPES VILALBA vs Alisson Antonio da Silva De Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MICHEL RAMON LOPES VILALBA vs GUSTAVO GABRIEL MARTINS DE SOUZA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MICHEL RAMON LOPES VILALBA vs ISABELLI ALVES DE SOUZA FELIPE  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MICHEL RAMON LOPES VILALBA vs Ana Julia Marques de Araujo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MICHEL RAMON LOPES VILALBA vs Nicolly Giovana Da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MICHEL RAMON LOPES VILALBA vs anay eduarda marcal casais - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MICHEL RAMON LOPES VILALBA vs Vinicíus de Albuquerque Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MICHEL RAMON LOPES VILALBA vs Marcelo Eduardo Costa de Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MICHEL RAMON LOPES VILALBA vs Davi Raphael Alves Santana - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MICHEL RAMON LOPES VILALBA vs mayara da silva moura - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MICHEL RAMON LOPES VILALBA vs Rayline Moraes Monteiro Dos Santos - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MICHEL RAMON LOPES VILALBA vs SILVANA VIEIRA DA SILVA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MICHEL RAMON LOPES VILALBA vs Miguel Borba Rodrigues  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MICHEL RAMON LOPES VILALBA vs Manuela Ferreira Moraes - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MICHEL RAMON LOPES VILALBA vs alberto decio - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MICHEL RAMON LOPES VILALBA vs PIETRO OTAVIO DA SILVA MARTINS - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MICHEL RAMON LOPES VILALBA vs EDSON IORE LIMA DA SALVA  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MICHEL RAMON LOPES VILALBA vs fagner aquino pereira - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MICHEL RAMON LOPES VILALBA vs Ikaro vinicius da silva souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MICHEL RAMON LOPES VILALBA vs Pedro  Herinque Margarido Berigo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MICHEL RAMON LOPES VILALBA vs REBECA VITORIA RAMOS DE ARRUDA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MICHEL RAMON LOPES VILALBA vs Ygor Conceicao da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MICHEL RAMON LOPES VILALBA vs Jean Carlos Lima Leal - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: MICHEL RAMON LOPES VILALBA vs Pedro Henrique Ojeda de Lucas - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Não foi encontrada inscrição para: MICHEL RAMON LOPES VILALBA - PC Gamer
+[2025-03-13 21:24:45] Erro ao comparar nomes: VINICIUS DE ALBUQUERQUE SOUZA vs victor oliveira benitez - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VINICIUS DE ALBUQUERQUE SOUZA vs marcio andre vitor filho - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VINICIUS DE ALBUQUERQUE SOUZA vs HANNA LARISSA MOURA BRITO  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VINICIUS DE ALBUQUERQUE SOUZA vs Alisson Antonio da Silva De Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VINICIUS DE ALBUQUERQUE SOUZA vs GUSTAVO GABRIEL MARTINS DE SOUZA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VINICIUS DE ALBUQUERQUE SOUZA vs ISABELLI ALVES DE SOUZA FELIPE  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VINICIUS DE ALBUQUERQUE SOUZA vs Ana Julia Marques de Araujo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VINICIUS DE ALBUQUERQUE SOUZA vs Nicolly Giovana Da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VINICIUS DE ALBUQUERQUE SOUZA vs anay eduarda marcal casais - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VINICIUS DE ALBUQUERQUE SOUZA vs Vinicíus de Albuquerque Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VINICIUS DE ALBUQUERQUE SOUZA vs Marcelo Eduardo Costa de Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VINICIUS DE ALBUQUERQUE SOUZA vs Davi Raphael Alves Santana - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VINICIUS DE ALBUQUERQUE SOUZA vs mayara da silva moura - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VINICIUS DE ALBUQUERQUE SOUZA vs Rayline Moraes Monteiro Dos Santos - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VINICIUS DE ALBUQUERQUE SOUZA vs SILVANA VIEIRA DA SILVA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VINICIUS DE ALBUQUERQUE SOUZA vs Miguel Borba Rodrigues  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VINICIUS DE ALBUQUERQUE SOUZA vs Manuela Ferreira Moraes - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VINICIUS DE ALBUQUERQUE SOUZA vs alberto decio - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VINICIUS DE ALBUQUERQUE SOUZA vs PIETRO OTAVIO DA SILVA MARTINS - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VINICIUS DE ALBUQUERQUE SOUZA vs EDSON IORE LIMA DA SALVA  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VINICIUS DE ALBUQUERQUE SOUZA vs fagner aquino pereira - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VINICIUS DE ALBUQUERQUE SOUZA vs Ikaro vinicius da silva souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VINICIUS DE ALBUQUERQUE SOUZA vs Pedro  Herinque Margarido Berigo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VINICIUS DE ALBUQUERQUE SOUZA vs REBECA VITORIA RAMOS DE ARRUDA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VINICIUS DE ALBUQUERQUE SOUZA vs Ygor Conceicao da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VINICIUS DE ALBUQUERQUE SOUZA vs Jean Carlos Lima Leal - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VINICIUS DE ALBUQUERQUE SOUZA vs Pedro Henrique Ojeda de Lucas - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Correspondência parcial para VINICIUS DE ALBUQUERQUE SOUZA - PC Gamer (melhor similaridade: 0.00)
+[2025-03-13 21:24:45] Erro ao comparar nomes: JOÃO PEDRO VILHALVA DE SÁ vs victor oliveira benitez - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JOÃO PEDRO VILHALVA DE SÁ vs marcio andre vitor filho - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JOÃO PEDRO VILHALVA DE SÁ vs HANNA LARISSA MOURA BRITO  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JOÃO PEDRO VILHALVA DE SÁ vs Alisson Antonio da Silva De Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JOÃO PEDRO VILHALVA DE SÁ vs GUSTAVO GABRIEL MARTINS DE SOUZA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JOÃO PEDRO VILHALVA DE SÁ vs ISABELLI ALVES DE SOUZA FELIPE  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JOÃO PEDRO VILHALVA DE SÁ vs Ana Julia Marques de Araujo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JOÃO PEDRO VILHALVA DE SÁ vs Nicolly Giovana Da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JOÃO PEDRO VILHALVA DE SÁ vs anay eduarda marcal casais - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JOÃO PEDRO VILHALVA DE SÁ vs Vinicíus de Albuquerque Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JOÃO PEDRO VILHALVA DE SÁ vs Marcelo Eduardo Costa de Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JOÃO PEDRO VILHALVA DE SÁ vs Davi Raphael Alves Santana - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JOÃO PEDRO VILHALVA DE SÁ vs mayara da silva moura - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JOÃO PEDRO VILHALVA DE SÁ vs Rayline Moraes Monteiro Dos Santos - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JOÃO PEDRO VILHALVA DE SÁ vs SILVANA VIEIRA DA SILVA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JOÃO PEDRO VILHALVA DE SÁ vs Miguel Borba Rodrigues  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JOÃO PEDRO VILHALVA DE SÁ vs Manuela Ferreira Moraes - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JOÃO PEDRO VILHALVA DE SÁ vs alberto decio - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JOÃO PEDRO VILHALVA DE SÁ vs PIETRO OTAVIO DA SILVA MARTINS - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JOÃO PEDRO VILHALVA DE SÁ vs EDSON IORE LIMA DA SALVA  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JOÃO PEDRO VILHALVA DE SÁ vs fagner aquino pereira - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JOÃO PEDRO VILHALVA DE SÁ vs Ikaro vinicius da silva souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JOÃO PEDRO VILHALVA DE SÁ vs Pedro  Herinque Margarido Berigo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JOÃO PEDRO VILHALVA DE SÁ vs REBECA VITORIA RAMOS DE ARRUDA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JOÃO PEDRO VILHALVA DE SÁ vs Ygor Conceicao da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JOÃO PEDRO VILHALVA DE SÁ vs Jean Carlos Lima Leal - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JOÃO PEDRO VILHALVA DE SÁ vs Pedro Henrique Ojeda de Lucas - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Não foi encontrada inscrição para: JOÃO PEDRO VILHALVA DE SÁ - PC Gamer
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANAY EDUARDA MARÇAL CASAIS vs victor oliveira benitez - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANAY EDUARDA MARÇAL CASAIS vs marcio andre vitor filho - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANAY EDUARDA MARÇAL CASAIS vs HANNA LARISSA MOURA BRITO  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANAY EDUARDA MARÇAL CASAIS vs Alisson Antonio da Silva De Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANAY EDUARDA MARÇAL CASAIS vs GUSTAVO GABRIEL MARTINS DE SOUZA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANAY EDUARDA MARÇAL CASAIS vs ISABELLI ALVES DE SOUZA FELIPE  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANAY EDUARDA MARÇAL CASAIS vs Ana Julia Marques de Araujo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANAY EDUARDA MARÇAL CASAIS vs Nicolly Giovana Da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANAY EDUARDA MARÇAL CASAIS vs anay eduarda marcal casais - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANAY EDUARDA MARÇAL CASAIS vs Vinicíus de Albuquerque Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANAY EDUARDA MARÇAL CASAIS vs Marcelo Eduardo Costa de Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANAY EDUARDA MARÇAL CASAIS vs Davi Raphael Alves Santana - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANAY EDUARDA MARÇAL CASAIS vs mayara da silva moura - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANAY EDUARDA MARÇAL CASAIS vs Rayline Moraes Monteiro Dos Santos - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANAY EDUARDA MARÇAL CASAIS vs SILVANA VIEIRA DA SILVA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANAY EDUARDA MARÇAL CASAIS vs Miguel Borba Rodrigues  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANAY EDUARDA MARÇAL CASAIS vs Manuela Ferreira Moraes - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANAY EDUARDA MARÇAL CASAIS vs alberto decio - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANAY EDUARDA MARÇAL CASAIS vs PIETRO OTAVIO DA SILVA MARTINS - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANAY EDUARDA MARÇAL CASAIS vs EDSON IORE LIMA DA SALVA  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANAY EDUARDA MARÇAL CASAIS vs fagner aquino pereira - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANAY EDUARDA MARÇAL CASAIS vs Ikaro vinicius da silva souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANAY EDUARDA MARÇAL CASAIS vs Pedro  Herinque Margarido Berigo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANAY EDUARDA MARÇAL CASAIS vs REBECA VITORIA RAMOS DE ARRUDA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANAY EDUARDA MARÇAL CASAIS vs Ygor Conceicao da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANAY EDUARDA MARÇAL CASAIS vs Jean Carlos Lima Leal - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANAY EDUARDA MARÇAL CASAIS vs Pedro Henrique Ojeda de Lucas - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Correspondência parcial para ANAY EDUARDA MARÇAL CASAIS - PC Gamer (melhor similaridade: 0.00)
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANA JULIA MARQUES DE ARAÚJO vs victor oliveira benitez - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANA JULIA MARQUES DE ARAÚJO vs marcio andre vitor filho - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANA JULIA MARQUES DE ARAÚJO vs HANNA LARISSA MOURA BRITO  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANA JULIA MARQUES DE ARAÚJO vs Alisson Antonio da Silva De Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANA JULIA MARQUES DE ARAÚJO vs GUSTAVO GABRIEL MARTINS DE SOUZA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANA JULIA MARQUES DE ARAÚJO vs ISABELLI ALVES DE SOUZA FELIPE  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANA JULIA MARQUES DE ARAÚJO vs Ana Julia Marques de Araujo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANA JULIA MARQUES DE ARAÚJO vs Nicolly Giovana Da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANA JULIA MARQUES DE ARAÚJO vs anay eduarda marcal casais - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANA JULIA MARQUES DE ARAÚJO vs Vinicíus de Albuquerque Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANA JULIA MARQUES DE ARAÚJO vs Marcelo Eduardo Costa de Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANA JULIA MARQUES DE ARAÚJO vs Davi Raphael Alves Santana - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANA JULIA MARQUES DE ARAÚJO vs mayara da silva moura - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANA JULIA MARQUES DE ARAÚJO vs Rayline Moraes Monteiro Dos Santos - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANA JULIA MARQUES DE ARAÚJO vs SILVANA VIEIRA DA SILVA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANA JULIA MARQUES DE ARAÚJO vs Miguel Borba Rodrigues  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANA JULIA MARQUES DE ARAÚJO vs Manuela Ferreira Moraes - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANA JULIA MARQUES DE ARAÚJO vs alberto decio - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANA JULIA MARQUES DE ARAÚJO vs PIETRO OTAVIO DA SILVA MARTINS - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANA JULIA MARQUES DE ARAÚJO vs EDSON IORE LIMA DA SALVA  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANA JULIA MARQUES DE ARAÚJO vs fagner aquino pereira - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANA JULIA MARQUES DE ARAÚJO vs Ikaro vinicius da silva souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANA JULIA MARQUES DE ARAÚJO vs Pedro  Herinque Margarido Berigo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANA JULIA MARQUES DE ARAÚJO vs REBECA VITORIA RAMOS DE ARRUDA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANA JULIA MARQUES DE ARAÚJO vs Ygor Conceicao da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANA JULIA MARQUES DE ARAÚJO vs Jean Carlos Lima Leal - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: ANA JULIA MARQUES DE ARAÚJO vs Pedro Henrique Ojeda de Lucas - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Correspondência parcial para ANA JULIA MARQUES DE ARAÚJO - PC Gamer (melhor similaridade: 0.00)
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE OJEDA DE LUCAS vs victor oliveira benitez - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE OJEDA DE LUCAS vs marcio andre vitor filho - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE OJEDA DE LUCAS vs HANNA LARISSA MOURA BRITO  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE OJEDA DE LUCAS vs Alisson Antonio da Silva De Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE OJEDA DE LUCAS vs GUSTAVO GABRIEL MARTINS DE SOUZA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE OJEDA DE LUCAS vs ISABELLI ALVES DE SOUZA FELIPE  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE OJEDA DE LUCAS vs Ana Julia Marques de Araujo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE OJEDA DE LUCAS vs Nicolly Giovana Da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE OJEDA DE LUCAS vs anay eduarda marcal casais - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE OJEDA DE LUCAS vs Vinicíus de Albuquerque Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE OJEDA DE LUCAS vs Marcelo Eduardo Costa de Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE OJEDA DE LUCAS vs Davi Raphael Alves Santana - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE OJEDA DE LUCAS vs mayara da silva moura - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE OJEDA DE LUCAS vs Rayline Moraes Monteiro Dos Santos - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE OJEDA DE LUCAS vs SILVANA VIEIRA DA SILVA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE OJEDA DE LUCAS vs Miguel Borba Rodrigues  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE OJEDA DE LUCAS vs Manuela Ferreira Moraes - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE OJEDA DE LUCAS vs alberto decio - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE OJEDA DE LUCAS vs PIETRO OTAVIO DA SILVA MARTINS - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE OJEDA DE LUCAS vs EDSON IORE LIMA DA SALVA  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE OJEDA DE LUCAS vs fagner aquino pereira - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE OJEDA DE LUCAS vs Ikaro vinicius da silva souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE OJEDA DE LUCAS vs Pedro  Herinque Margarido Berigo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE OJEDA DE LUCAS vs REBECA VITORIA RAMOS DE ARRUDA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE OJEDA DE LUCAS vs Ygor Conceicao da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE OJEDA DE LUCAS vs Jean Carlos Lima Leal - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PEDRO HENRIQUE OJEDA DE LUCAS vs Pedro Henrique Ojeda de Lucas - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Correspondência parcial para PEDRO HENRIQUE OJEDA DE LUCAS - PC Gamer (melhor similaridade: 0.00)
+[2025-03-13 21:24:45] Erro ao comparar nomes: YGOR CONCEIÇÃO DA SILVA vs victor oliveira benitez - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: YGOR CONCEIÇÃO DA SILVA vs marcio andre vitor filho - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: YGOR CONCEIÇÃO DA SILVA vs HANNA LARISSA MOURA BRITO  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: YGOR CONCEIÇÃO DA SILVA vs Alisson Antonio da Silva De Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: YGOR CONCEIÇÃO DA SILVA vs GUSTAVO GABRIEL MARTINS DE SOUZA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: YGOR CONCEIÇÃO DA SILVA vs ISABELLI ALVES DE SOUZA FELIPE  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: YGOR CONCEIÇÃO DA SILVA vs Ana Julia Marques de Araujo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: YGOR CONCEIÇÃO DA SILVA vs Nicolly Giovana Da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: YGOR CONCEIÇÃO DA SILVA vs anay eduarda marcal casais - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: YGOR CONCEIÇÃO DA SILVA vs Vinicíus de Albuquerque Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: YGOR CONCEIÇÃO DA SILVA vs Marcelo Eduardo Costa de Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: YGOR CONCEIÇÃO DA SILVA vs Davi Raphael Alves Santana - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: YGOR CONCEIÇÃO DA SILVA vs mayara da silva moura - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: YGOR CONCEIÇÃO DA SILVA vs Rayline Moraes Monteiro Dos Santos - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: YGOR CONCEIÇÃO DA SILVA vs SILVANA VIEIRA DA SILVA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: YGOR CONCEIÇÃO DA SILVA vs Miguel Borba Rodrigues  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: YGOR CONCEIÇÃO DA SILVA vs Manuela Ferreira Moraes - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: YGOR CONCEIÇÃO DA SILVA vs alberto decio - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: YGOR CONCEIÇÃO DA SILVA vs PIETRO OTAVIO DA SILVA MARTINS - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: YGOR CONCEIÇÃO DA SILVA vs EDSON IORE LIMA DA SALVA  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: YGOR CONCEIÇÃO DA SILVA vs fagner aquino pereira - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: YGOR CONCEIÇÃO DA SILVA vs Ikaro vinicius da silva souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: YGOR CONCEIÇÃO DA SILVA vs Pedro  Herinque Margarido Berigo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: YGOR CONCEIÇÃO DA SILVA vs REBECA VITORIA RAMOS DE ARRUDA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: YGOR CONCEIÇÃO DA SILVA vs Ygor Conceicao da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: YGOR CONCEIÇÃO DA SILVA vs Jean Carlos Lima Leal - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: YGOR CONCEIÇÃO DA SILVA vs Pedro Henrique Ojeda de Lucas - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Correspondência parcial para YGOR CONCEIÇÃO DA SILVA - PC Gamer (melhor similaridade: 0.00)
+[2025-03-13 21:24:45] Erro ao comparar nomes: EDSON IORI LIMA DA SILVA vs victor oliveira benitez - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: EDSON IORI LIMA DA SILVA vs marcio andre vitor filho - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: EDSON IORI LIMA DA SILVA vs HANNA LARISSA MOURA BRITO  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: EDSON IORI LIMA DA SILVA vs Alisson Antonio da Silva De Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: EDSON IORI LIMA DA SILVA vs GUSTAVO GABRIEL MARTINS DE SOUZA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: EDSON IORI LIMA DA SILVA vs ISABELLI ALVES DE SOUZA FELIPE  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: EDSON IORI LIMA DA SILVA vs Ana Julia Marques de Araujo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: EDSON IORI LIMA DA SILVA vs Nicolly Giovana Da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: EDSON IORI LIMA DA SILVA vs anay eduarda marcal casais - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: EDSON IORI LIMA DA SILVA vs Vinicíus de Albuquerque Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: EDSON IORI LIMA DA SILVA vs Marcelo Eduardo Costa de Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: EDSON IORI LIMA DA SILVA vs Davi Raphael Alves Santana - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: EDSON IORI LIMA DA SILVA vs mayara da silva moura - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: EDSON IORI LIMA DA SILVA vs Rayline Moraes Monteiro Dos Santos - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: EDSON IORI LIMA DA SILVA vs SILVANA VIEIRA DA SILVA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: EDSON IORI LIMA DA SILVA vs Miguel Borba Rodrigues  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: EDSON IORI LIMA DA SILVA vs Manuela Ferreira Moraes - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: EDSON IORI LIMA DA SILVA vs alberto decio - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: EDSON IORI LIMA DA SILVA vs PIETRO OTAVIO DA SILVA MARTINS - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: EDSON IORI LIMA DA SILVA vs EDSON IORE LIMA DA SALVA  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: EDSON IORI LIMA DA SILVA vs fagner aquino pereira - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: EDSON IORI LIMA DA SILVA vs Ikaro vinicius da silva souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: EDSON IORI LIMA DA SILVA vs Pedro  Herinque Margarido Berigo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: EDSON IORI LIMA DA SILVA vs REBECA VITORIA RAMOS DE ARRUDA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: EDSON IORI LIMA DA SILVA vs Ygor Conceicao da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: EDSON IORI LIMA DA SILVA vs Jean Carlos Lima Leal - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: EDSON IORI LIMA DA SILVA vs Pedro Henrique Ojeda de Lucas - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Correspondência parcial para EDSON IORI LIMA DA SILVA - PC Gamer (melhor similaridade: 0.00)
+[2025-03-13 21:24:45] Erro ao comparar nomes: JEAN CARLOS LIMA LEAL vs victor oliveira benitez - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JEAN CARLOS LIMA LEAL vs marcio andre vitor filho - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JEAN CARLOS LIMA LEAL vs HANNA LARISSA MOURA BRITO  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JEAN CARLOS LIMA LEAL vs Alisson Antonio da Silva De Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JEAN CARLOS LIMA LEAL vs GUSTAVO GABRIEL MARTINS DE SOUZA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JEAN CARLOS LIMA LEAL vs ISABELLI ALVES DE SOUZA FELIPE  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JEAN CARLOS LIMA LEAL vs Ana Julia Marques de Araujo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JEAN CARLOS LIMA LEAL vs Nicolly Giovana Da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JEAN CARLOS LIMA LEAL vs anay eduarda marcal casais - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JEAN CARLOS LIMA LEAL vs Vinicíus de Albuquerque Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JEAN CARLOS LIMA LEAL vs Marcelo Eduardo Costa de Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JEAN CARLOS LIMA LEAL vs Davi Raphael Alves Santana - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JEAN CARLOS LIMA LEAL vs mayara da silva moura - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JEAN CARLOS LIMA LEAL vs Rayline Moraes Monteiro Dos Santos - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JEAN CARLOS LIMA LEAL vs SILVANA VIEIRA DA SILVA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JEAN CARLOS LIMA LEAL vs Miguel Borba Rodrigues  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JEAN CARLOS LIMA LEAL vs Manuela Ferreira Moraes - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JEAN CARLOS LIMA LEAL vs alberto decio - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JEAN CARLOS LIMA LEAL vs PIETRO OTAVIO DA SILVA MARTINS - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JEAN CARLOS LIMA LEAL vs EDSON IORE LIMA DA SALVA  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JEAN CARLOS LIMA LEAL vs fagner aquino pereira - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JEAN CARLOS LIMA LEAL vs Ikaro vinicius da silva souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JEAN CARLOS LIMA LEAL vs Pedro  Herinque Margarido Berigo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JEAN CARLOS LIMA LEAL vs REBECA VITORIA RAMOS DE ARRUDA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JEAN CARLOS LIMA LEAL vs Ygor Conceicao da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JEAN CARLOS LIMA LEAL vs Jean Carlos Lima Leal - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: JEAN CARLOS LIMA LEAL vs Pedro Henrique Ojeda de Lucas - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Correspondência parcial para JEAN CARLOS LIMA LEAL - PC Gamer (melhor similaridade: 0.00)
+[2025-03-13 21:24:45] Erro ao comparar nomes: PIETRO OTÁVIO DA SILVA MARTINS vs victor oliveira benitez - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PIETRO OTÁVIO DA SILVA MARTINS vs marcio andre vitor filho - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PIETRO OTÁVIO DA SILVA MARTINS vs HANNA LARISSA MOURA BRITO  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PIETRO OTÁVIO DA SILVA MARTINS vs Alisson Antonio da Silva De Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PIETRO OTÁVIO DA SILVA MARTINS vs GUSTAVO GABRIEL MARTINS DE SOUZA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PIETRO OTÁVIO DA SILVA MARTINS vs ISABELLI ALVES DE SOUZA FELIPE  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PIETRO OTÁVIO DA SILVA MARTINS vs Ana Julia Marques de Araujo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PIETRO OTÁVIO DA SILVA MARTINS vs Nicolly Giovana Da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PIETRO OTÁVIO DA SILVA MARTINS vs anay eduarda marcal casais - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PIETRO OTÁVIO DA SILVA MARTINS vs Vinicíus de Albuquerque Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PIETRO OTÁVIO DA SILVA MARTINS vs Marcelo Eduardo Costa de Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PIETRO OTÁVIO DA SILVA MARTINS vs Davi Raphael Alves Santana - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PIETRO OTÁVIO DA SILVA MARTINS vs mayara da silva moura - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PIETRO OTÁVIO DA SILVA MARTINS vs Rayline Moraes Monteiro Dos Santos - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PIETRO OTÁVIO DA SILVA MARTINS vs SILVANA VIEIRA DA SILVA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PIETRO OTÁVIO DA SILVA MARTINS vs Miguel Borba Rodrigues  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PIETRO OTÁVIO DA SILVA MARTINS vs Manuela Ferreira Moraes - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PIETRO OTÁVIO DA SILVA MARTINS vs alberto decio - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PIETRO OTÁVIO DA SILVA MARTINS vs PIETRO OTAVIO DA SILVA MARTINS - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PIETRO OTÁVIO DA SILVA MARTINS vs EDSON IORE LIMA DA SALVA  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PIETRO OTÁVIO DA SILVA MARTINS vs fagner aquino pereira - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PIETRO OTÁVIO DA SILVA MARTINS vs Ikaro vinicius da silva souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PIETRO OTÁVIO DA SILVA MARTINS vs Pedro  Herinque Margarido Berigo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PIETRO OTÁVIO DA SILVA MARTINS vs REBECA VITORIA RAMOS DE ARRUDA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PIETRO OTÁVIO DA SILVA MARTINS vs Ygor Conceicao da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PIETRO OTÁVIO DA SILVA MARTINS vs Jean Carlos Lima Leal - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: PIETRO OTÁVIO DA SILVA MARTINS vs Pedro Henrique Ojeda de Lucas - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Correspondência parcial para PIETRO OTÁVIO DA SILVA MARTINS - PC Gamer (melhor similaridade: 0.00)
+[2025-03-13 21:24:45] Erro ao comparar nomes: VICTOR OLIVEIRA BENITEZ vs victor oliveira benitez - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VICTOR OLIVEIRA BENITEZ vs marcio andre vitor filho - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VICTOR OLIVEIRA BENITEZ vs HANNA LARISSA MOURA BRITO  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VICTOR OLIVEIRA BENITEZ vs Alisson Antonio da Silva De Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VICTOR OLIVEIRA BENITEZ vs GUSTAVO GABRIEL MARTINS DE SOUZA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VICTOR OLIVEIRA BENITEZ vs ISABELLI ALVES DE SOUZA FELIPE  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VICTOR OLIVEIRA BENITEZ vs Ana Julia Marques de Araujo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VICTOR OLIVEIRA BENITEZ vs Nicolly Giovana Da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VICTOR OLIVEIRA BENITEZ vs anay eduarda marcal casais - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VICTOR OLIVEIRA BENITEZ vs Vinicíus de Albuquerque Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VICTOR OLIVEIRA BENITEZ vs Marcelo Eduardo Costa de Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VICTOR OLIVEIRA BENITEZ vs Davi Raphael Alves Santana - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VICTOR OLIVEIRA BENITEZ vs mayara da silva moura - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VICTOR OLIVEIRA BENITEZ vs Rayline Moraes Monteiro Dos Santos - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VICTOR OLIVEIRA BENITEZ vs SILVANA VIEIRA DA SILVA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VICTOR OLIVEIRA BENITEZ vs Miguel Borba Rodrigues  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VICTOR OLIVEIRA BENITEZ vs Manuela Ferreira Moraes - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VICTOR OLIVEIRA BENITEZ vs alberto decio - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VICTOR OLIVEIRA BENITEZ vs PIETRO OTAVIO DA SILVA MARTINS - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VICTOR OLIVEIRA BENITEZ vs EDSON IORE LIMA DA SALVA  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VICTOR OLIVEIRA BENITEZ vs fagner aquino pereira - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VICTOR OLIVEIRA BENITEZ vs Ikaro vinicius da silva souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VICTOR OLIVEIRA BENITEZ vs Pedro  Herinque Margarido Berigo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VICTOR OLIVEIRA BENITEZ vs REBECA VITORIA RAMOS DE ARRUDA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VICTOR OLIVEIRA BENITEZ vs Ygor Conceicao da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VICTOR OLIVEIRA BENITEZ vs Jean Carlos Lima Leal - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: VICTOR OLIVEIRA BENITEZ vs Pedro Henrique Ojeda de Lucas - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Correspondência parcial para VICTOR OLIVEIRA BENITEZ - PC Gamer (melhor similaridade: 0.00)
+[2025-03-13 21:24:45] Erro ao comparar nomes: SILVANA VIEIRA DA SILVA (prof) vs victor oliveira benitez - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: SILVANA VIEIRA DA SILVA (prof) vs marcio andre vitor filho - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: SILVANA VIEIRA DA SILVA (prof) vs HANNA LARISSA MOURA BRITO  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: SILVANA VIEIRA DA SILVA (prof) vs Alisson Antonio da Silva De Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: SILVANA VIEIRA DA SILVA (prof) vs GUSTAVO GABRIEL MARTINS DE SOUZA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: SILVANA VIEIRA DA SILVA (prof) vs ISABELLI ALVES DE SOUZA FELIPE  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: SILVANA VIEIRA DA SILVA (prof) vs Ana Julia Marques de Araujo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: SILVANA VIEIRA DA SILVA (prof) vs Nicolly Giovana Da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: SILVANA VIEIRA DA SILVA (prof) vs anay eduarda marcal casais - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: SILVANA VIEIRA DA SILVA (prof) vs Vinicíus de Albuquerque Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: SILVANA VIEIRA DA SILVA (prof) vs Marcelo Eduardo Costa de Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: SILVANA VIEIRA DA SILVA (prof) vs Davi Raphael Alves Santana - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: SILVANA VIEIRA DA SILVA (prof) vs mayara da silva moura - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: SILVANA VIEIRA DA SILVA (prof) vs Rayline Moraes Monteiro Dos Santos - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: SILVANA VIEIRA DA SILVA (prof) vs SILVANA VIEIRA DA SILVA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: SILVANA VIEIRA DA SILVA (prof) vs Miguel Borba Rodrigues  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: SILVANA VIEIRA DA SILVA (prof) vs Manuela Ferreira Moraes - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: SILVANA VIEIRA DA SILVA (prof) vs alberto decio - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: SILVANA VIEIRA DA SILVA (prof) vs PIETRO OTAVIO DA SILVA MARTINS - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: SILVANA VIEIRA DA SILVA (prof) vs EDSON IORE LIMA DA SALVA  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: SILVANA VIEIRA DA SILVA (prof) vs fagner aquino pereira - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: SILVANA VIEIRA DA SILVA (prof) vs Ikaro vinicius da silva souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: SILVANA VIEIRA DA SILVA (prof) vs Pedro  Herinque Margarido Berigo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: SILVANA VIEIRA DA SILVA (prof) vs REBECA VITORIA RAMOS DE ARRUDA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: SILVANA VIEIRA DA SILVA (prof) vs Ygor Conceicao da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: SILVANA VIEIRA DA SILVA (prof) vs Jean Carlos Lima Leal - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: SILVANA VIEIRA DA SILVA (prof) vs Pedro Henrique Ojeda de Lucas - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Correspondência parcial para SILVANA VIEIRA DA SILVA (prof) - PC Gamer (melhor similaridade: 0.00)
+[2025-03-13 21:24:45] Erro ao comparar nomes: Ikaro vinicius da silva souza vs victor oliveira benitez - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Ikaro vinicius da silva souza vs marcio andre vitor filho - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Ikaro vinicius da silva souza vs HANNA LARISSA MOURA BRITO  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Ikaro vinicius da silva souza vs Alisson Antonio da Silva De Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Ikaro vinicius da silva souza vs GUSTAVO GABRIEL MARTINS DE SOUZA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Ikaro vinicius da silva souza vs ISABELLI ALVES DE SOUZA FELIPE  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Ikaro vinicius da silva souza vs Ana Julia Marques de Araujo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Ikaro vinicius da silva souza vs Nicolly Giovana Da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Ikaro vinicius da silva souza vs anay eduarda marcal casais - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Ikaro vinicius da silva souza vs Vinicíus de Albuquerque Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Ikaro vinicius da silva souza vs Marcelo Eduardo Costa de Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Ikaro vinicius da silva souza vs Davi Raphael Alves Santana - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Ikaro vinicius da silva souza vs mayara da silva moura - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Ikaro vinicius da silva souza vs Rayline Moraes Monteiro Dos Santos - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Ikaro vinicius da silva souza vs SILVANA VIEIRA DA SILVA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Ikaro vinicius da silva souza vs Miguel Borba Rodrigues  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Ikaro vinicius da silva souza vs Manuela Ferreira Moraes - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Ikaro vinicius da silva souza vs alberto decio - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Ikaro vinicius da silva souza vs PIETRO OTAVIO DA SILVA MARTINS - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Ikaro vinicius da silva souza vs EDSON IORE LIMA DA SALVA  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Ikaro vinicius da silva souza vs fagner aquino pereira - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Ikaro vinicius da silva souza vs Ikaro vinicius da silva souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Ikaro vinicius da silva souza vs Pedro  Herinque Margarido Berigo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Ikaro vinicius da silva souza vs REBECA VITORIA RAMOS DE ARRUDA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Ikaro vinicius da silva souza vs Ygor Conceicao da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Ikaro vinicius da silva souza vs Jean Carlos Lima Leal - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Ikaro vinicius da silva souza vs Pedro Henrique Ojeda de Lucas - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Correspondência parcial para Ikaro vinicius da silva souza - PC Gamer (melhor similaridade: 0.00)
+[2025-03-13 21:24:45] Erro ao comparar nomes: Maria Aparecidas Martins Barros (Prof) vs victor oliveira benitez - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Maria Aparecidas Martins Barros (Prof) vs marcio andre vitor filho - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Maria Aparecidas Martins Barros (Prof) vs HANNA LARISSA MOURA BRITO  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Maria Aparecidas Martins Barros (Prof) vs Alisson Antonio da Silva De Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Maria Aparecidas Martins Barros (Prof) vs GUSTAVO GABRIEL MARTINS DE SOUZA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Maria Aparecidas Martins Barros (Prof) vs ISABELLI ALVES DE SOUZA FELIPE  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Maria Aparecidas Martins Barros (Prof) vs Ana Julia Marques de Araujo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Maria Aparecidas Martins Barros (Prof) vs Nicolly Giovana Da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Maria Aparecidas Martins Barros (Prof) vs anay eduarda marcal casais - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Maria Aparecidas Martins Barros (Prof) vs Vinicíus de Albuquerque Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Maria Aparecidas Martins Barros (Prof) vs Marcelo Eduardo Costa de Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Maria Aparecidas Martins Barros (Prof) vs Davi Raphael Alves Santana - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Maria Aparecidas Martins Barros (Prof) vs mayara da silva moura - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Maria Aparecidas Martins Barros (Prof) vs Rayline Moraes Monteiro Dos Santos - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Maria Aparecidas Martins Barros (Prof) vs SILVANA VIEIRA DA SILVA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Maria Aparecidas Martins Barros (Prof) vs Miguel Borba Rodrigues  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Maria Aparecidas Martins Barros (Prof) vs Manuela Ferreira Moraes - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Maria Aparecidas Martins Barros (Prof) vs alberto decio - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Maria Aparecidas Martins Barros (Prof) vs PIETRO OTAVIO DA SILVA MARTINS - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Maria Aparecidas Martins Barros (Prof) vs EDSON IORE LIMA DA SALVA  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Maria Aparecidas Martins Barros (Prof) vs fagner aquino pereira - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Maria Aparecidas Martins Barros (Prof) vs Ikaro vinicius da silva souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Maria Aparecidas Martins Barros (Prof) vs Pedro  Herinque Margarido Berigo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Maria Aparecidas Martins Barros (Prof) vs REBECA VITORIA RAMOS DE ARRUDA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Maria Aparecidas Martins Barros (Prof) vs Ygor Conceicao da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Maria Aparecidas Martins Barros (Prof) vs Jean Carlos Lima Leal - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Maria Aparecidas Martins Barros (Prof) vs Pedro Henrique Ojeda de Lucas - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Não foi encontrada inscrição para: Maria Aparecidas Martins Barros (Prof) - PC Gamer
+[2025-03-13 21:24:45] Erro ao comparar nomes: Enzo Margarido Berigo vs victor oliveira benitez - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Enzo Margarido Berigo vs marcio andre vitor filho - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Enzo Margarido Berigo vs HANNA LARISSA MOURA BRITO  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Enzo Margarido Berigo vs Alisson Antonio da Silva De Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Enzo Margarido Berigo vs GUSTAVO GABRIEL MARTINS DE SOUZA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Enzo Margarido Berigo vs ISABELLI ALVES DE SOUZA FELIPE  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Enzo Margarido Berigo vs Ana Julia Marques de Araujo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Enzo Margarido Berigo vs Nicolly Giovana Da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Enzo Margarido Berigo vs anay eduarda marcal casais - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Enzo Margarido Berigo vs Vinicíus de Albuquerque Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Enzo Margarido Berigo vs Marcelo Eduardo Costa de Souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Enzo Margarido Berigo vs Davi Raphael Alves Santana - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Enzo Margarido Berigo vs mayara da silva moura - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Enzo Margarido Berigo vs Rayline Moraes Monteiro Dos Santos - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Enzo Margarido Berigo vs SILVANA VIEIRA DA SILVA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Enzo Margarido Berigo vs Miguel Borba Rodrigues  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Enzo Margarido Berigo vs Manuela Ferreira Moraes - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Enzo Margarido Berigo vs alberto decio - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Enzo Margarido Berigo vs PIETRO OTAVIO DA SILVA MARTINS - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Enzo Margarido Berigo vs EDSON IORE LIMA DA SALVA  - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Enzo Margarido Berigo vs fagner aquino pereira - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Enzo Margarido Berigo vs Ikaro vinicius da silva souza - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Enzo Margarido Berigo vs Pedro  Herinque Margarido Berigo - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Enzo Margarido Berigo vs REBECA VITORIA RAMOS DE ARRUDA - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Enzo Margarido Berigo vs Ygor Conceicao da Silva - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Enzo Margarido Berigo vs Jean Carlos Lima Leal - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Erro ao comparar nomes: Enzo Margarido Berigo vs Pedro Henrique Ojeda de Lucas - name 'calcular_similaridade' is not defined
+[2025-03-13 21:24:45] Correspondência parcial para Enzo Margarido Berigo - PC Gamer (melhor similaridade: 0.00)
