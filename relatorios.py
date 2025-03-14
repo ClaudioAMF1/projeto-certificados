@@ -1,3 +1,6 @@
+# Arquivo: relatorios.py
+# Modificar a função para incluir todos os alunos não certificados
+
 import os
 import pandas as pd
 
@@ -64,6 +67,9 @@ def salvar_relatório_reprovados(alunos_reprovados, arquivo_saida="alunos_reprov
     df_reprovados = pd.DataFrame(dados_relatorio)
     df_reprovados.to_csv(arquivo_saida, index=False, encoding='utf-8')
     print(f"Relatório de reprovados gerado: {arquivo_saida} ({len(dados_relatorio)} alunos)")
+    
+    # Retornar os dados para uso posterior
+    return dados_relatorio
 
 
 def salvar_relatório_nao_incluidos(alunos_nao_incluidos, arquivo_saida="alunos_nao_incluidos.csv"):
@@ -91,6 +97,62 @@ def salvar_relatório_nao_incluidos(alunos_nao_incluidos, arquivo_saida="alunos_
     df_nao_incluidos = pd.DataFrame(dados_relatorio)
     df_nao_incluidos.to_csv(arquivo_saida, index=False, encoding='utf-8')
     print(f"Relatório de alunos não incluídos gerado: {arquivo_saida} ({len(dados_relatorio)} alunos)")
+    
+    # Retornar os dados para uso posterior
+    return dados_relatorio
+
+
+def salvar_relatorio_todos_nao_certificados(alunos_reprovados, alunos_nao_incluidos, arquivo_saida="alunos_nao_certificados.csv"):
+    """
+    Salva um relatório consolidado de todos os alunos que não receberam certificados, 
+    independente do motivo (reprovados por frequência ou sem inscrição correspondente)
+    
+    Args:
+        alunos_reprovados: Dados dos alunos reprovados por frequência
+        alunos_nao_incluidos: Dados dos alunos sem inscrição correspondente
+        arquivo_saida: Caminho para o arquivo CSV de saída
+    """
+    # Preparar dados para o relatório consolidado
+    dados_consolidados = []
+    
+    # Adicionar alunos reprovados por frequência
+    for aluno in alunos_reprovados:
+        dados_consolidados.append({
+            'NOME': aluno['NOME'],
+            'CURSO': aluno['CURSO'],
+            'MOTIVO': aluno['MOTIVO_REPROVACAO'],
+            'DETALHES': aluno.get('DETALHES', '')
+        })
+    
+    # Adicionar alunos sem inscrição correspondente
+    for aluno in alunos_nao_incluidos:
+        dados_consolidados.append({
+            'NOME': aluno['NOME'],
+            'CURSO': aluno['CURSO'],
+            'MOTIVO': aluno['MOTIVO'],
+            'DETALHES': ''
+        })
+    
+    # Salvar relatório consolidado
+    df_consolidado = pd.DataFrame(dados_consolidados)
+    df_consolidado.to_csv(arquivo_saida, index=False, encoding='utf-8')
+    print(f"\nRELATÓRIO CONSOLIDADO DE ALUNOS NÃO CERTIFICADOS")
+    print("-" * 80)
+    print(f"Total de alunos sem certificado: {len(dados_consolidados)}")
+    print(f"Relatório consolidado gerado: {arquivo_saida}")
+    
+    # Listar todos os alunos
+    print("\nLista de todos os alunos sem certificado:")
+    print("| {:<4} | {:<40} | {:<20} | {:<30} |".format("Nº", "Nome do Aluno", "Curso", "Motivo"))
+    print("|" + "-"*6 + "|" + "-"*42 + "|" + "-"*22 + "|" + "-"*32 + "|")
+    
+    for i, aluno in enumerate(sorted(dados_consolidados, key=lambda x: x['NOME']), 1):
+        nome = aluno['NOME'][:40]
+        curso = aluno['CURSO'][:20]
+        motivo = aluno['MOTIVO'][:30]
+        print("| {:<4} | {:<40} | {:<20} | {:<30} |".format(i, nome, curso, motivo))
+    
+    return dados_consolidados
 
 
 def exibir_estatisticas_por_curso(correspondencias_por_curso):

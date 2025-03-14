@@ -3,7 +3,7 @@ import traceback
 from datetime import datetime
 
 from processadores import processar_frequencia_pandas, processar_inscricao_pandas
-from relatorios import salvar_relatório_reprovados
+from relatorios import salvar_relatório_reprovados, salvar_relatório_nao_incluidos, salvar_relatorio_todos_nao_certificados
 from utils import ordenar_por_nome
 
 def main():
@@ -49,8 +49,10 @@ def main():
                 curso = str(aluno['CURSO'])
                 print("| {:<4} | {:<40} | {:<20} |".format(i, nome[:40], curso[:20]))
             
-            # Salvar relatório de reprovados
-            salvar_relatório_reprovados(alunos_reprovados)
+            # Salvar relatório de reprovados e armazenar o resultado
+            dados_reprovados = salvar_relatório_reprovados(alunos_reprovados)
+        else:
+            dados_reprovados = []
         
         # Processar o arquivo de inscrição e gerar o arquivo final
         print("\n" + "-"*80)
@@ -67,6 +69,47 @@ def main():
         print(f"Total de alunos aprovados: {len(alunos_aprovados)}")
         print(f"Total de alunos reprovados: {len(alunos_reprovados)}")
         print(f"Total de certificados gerados: {len(dados_finais)}")
+        
+        # Verificar quais alunos aprovados não foram incluídos no arquivo final
+        alunos_nao_incluidos = []
+        for aluno in alunos_aprovados:
+            nome_aluno = aluno['NOME_ORIGINAL']
+            curso = aluno['CURSO_ORIGINAL']
+            
+            # Garantir que nome_aluno seja uma string
+            if not isinstance(nome_aluno, str):
+                nome_aluno = str(nome_aluno)
+                
+            # Verificamos se o aluno foi incluído nos certificados finais
+            incluido = False
+            for cert in dados_finais:
+                if cert['NOME'] == aluno['NOME']:
+                    incluido = True
+                    break
+                    
+            if not incluido:
+                alunos_nao_incluidos.append(f"{nome_aluno} - {curso}")
+        
+        # Gerar relatório de alunos não incluídos
+        if alunos_nao_incluidos:
+            # Salvar relatório de alunos não incluídos e armazenar o resultado
+            dados_nao_incluidos = salvar_relatório_nao_incluidos(alunos_nao_incluidos)
+            
+            print(f"\nAlunos aprovados mas não incluídos (por falta de inscrição ou inscrição para curso incorreto): {len(alunos_nao_incluidos)}")
+            print("-" * 80)
+            print("| {:<4} | {:<40} | {:<20} |".format("Nº", "Nome do Aluno", "Curso"))
+            print("|" + "-"*6 + "|" + "-"*42 + "|" + "-"*22 + "|")
+            
+            for i, aluno_info in enumerate(alunos_nao_incluidos, 1):
+                partes = aluno_info.split(" - ", 1)
+                nome = partes[0] if len(partes) > 0 else ""
+                curso = partes[1] if len(partes) > 1 else ""
+                print("| {:<4} | {:<40} | {:<20} |".format(i, nome[:40], curso[:20]))
+        else:
+            dados_nao_incluidos = []
+        
+        # Criar relatório consolidado de todos os alunos que não receberam certificados
+        salvar_relatorio_todos_nao_certificados(dados_reprovados, dados_nao_incluidos)
         
     except Exception as e:
         print(f"\nErro ao processar os arquivos: {str(e)}")

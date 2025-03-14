@@ -6,7 +6,8 @@ import re
 from utils import (
     normalizar_nome, capitalizar_nome, formatar_data, 
     obter_nome_curso_para_certificado, nomes_similares, 
-    cursos_correspondentes, encontrar_melhor_correspondencia
+    cursos_correspondentes, encontrar_melhor_correspondencia,
+    calcular_similaridade
 )
 from relatorios import gerar_planilhas_por_curso, salvar_relatório_nao_incluidos, exibir_estatisticas_por_curso
 
@@ -120,8 +121,8 @@ def processar_frequencia_pandas(arquivo_frequencia):
                     'CURSO': curso_certificado,
                     'CURSO_ORIGINAL': curso,
                     'DATA_CONCLUSAO': data_formatada,
-                    'DETALHES_PRESENCA': resumo_presenca,
-                    'PORCENTAGEM_PRESENCA': f"{porcentagem_presenca:.1f}%"
+                    'DETALHES_PRESENCA': resumo_presenca
+                    # Removido: 'PORCENTAGEM_PRESENCA': f"{porcentagem_presenca:.1f}%"
                 })
             else:
                 alunos_reprovados.append({
@@ -195,7 +196,8 @@ def processar_inscricao_pandas(arquivo_inscricao, alunos_aprovados, arquivo_said
         campos_finais = [
             'DATA_ADESAO', 'ESTADO', 'ESCOLA', 'NOME', 'CURSO', 'TELEFONE', 
             'EMAIL', 'CPF', 'DIA', 'MES', 'ANO', 'IDADE', 'COR_PELE', 
-            'SEXO', 'SERIE_ESCOLAR', 'DATA_CONCLUSAO', 'PORCENTAGEM_PRESENCA'
+            'SEXO', 'SERIE_ESCOLAR', 'DATA_CONCLUSAO'
+            # Removido: 'PORCENTAGEM_PRESENCA'
         ]
         
         # Mapeamento dos campos do arquivo de inscrição para os campos finais
@@ -244,7 +246,6 @@ def processar_inscricao_pandas(arquivo_inscricao, alunos_aprovados, arquivo_said
                 curso_frequencia = aluno['CURSO_ORIGINAL']
                 curso_certificado = aluno['CURSO']
                 data_conclusao = aluno['DATA_CONCLUSAO']
-                porcentagem_presenca = aluno.get('PORCENTAGEM_PRESENCA', "")
                 
                 # Registrar estatísticas por curso
                 if curso_frequencia not in correspondencias_por_curso:
@@ -387,10 +388,9 @@ def processar_inscricao_pandas(arquivo_inscricao, alunos_aprovados, arquivo_said
                             
                             aluno_final[campo_final] = valor
                     
-                    # Adicionar a data de conclusão, curso formatado e porcentagem de presença 
+                    # Adicionar a data de conclusão e curso formatado
                     aluno_final['DATA_CONCLUSAO'] = data_conclusao
                     aluno_final['CURSO'] = curso_certificado
-                    aluno_final['PORCENTAGEM_PRESENCA'] = porcentagem_presenca
                     
                     # Garantir que o nome seja capitalizado corretamente
                     if aluno_final['NOME']:
