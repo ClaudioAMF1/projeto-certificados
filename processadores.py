@@ -7,9 +7,8 @@ from utils import (
     normalizar_nome, capitalizar_nome, formatar_data, 
     obter_nome_curso_para_certificado, nomes_similares, 
     cursos_correspondentes, encontrar_melhor_correspondencia,
-    calcular_similaridade
+    calcular_similaridade, verificar_subconjunto_nomes
 )
-from relatorios import gerar_planilhas_por_curso, salvar_relatório_nao_incluidos, exibir_estatisticas_por_curso
 
 def processar_frequencia_pandas(arquivo_frequencia):
     """
@@ -61,6 +60,7 @@ def processar_frequencia_pandas(arquivo_frequencia):
             # Converter valores para string para evitar problemas de tipo
             nome_aluno = str(row['ALUNOS']) if pd.notna(row['ALUNOS']) else ""
             curso = str(row['CURSO']) if pd.notna(row['CURSO']) else ""
+            cpf = str(row['CPF']) if 'CPF' in row and pd.notna(row['CPF']) else ""
             
             # Verificar dados inconsistentes ou anomalias
             if not nome_aluno or not curso:
@@ -93,6 +93,7 @@ def processar_frequencia_pandas(arquivo_frequencia):
                 alunos_reprovados.append({
                     'NOME': nome_aluno,
                     'CURSO': curso,
+                    'CPF': cpf,
                     'MOTIVO': 'Sem dias válidos de presença',
                     'DETALHES_PRESENCA': resumo_presenca
                 })
@@ -120,14 +121,15 @@ def processar_frequencia_pandas(arquivo_frequencia):
                     'NOME_ORIGINAL': nome_aluno,
                     'CURSO': curso_certificado,
                     'CURSO_ORIGINAL': curso,
+                    'CPF': cpf,
                     'DATA_CONCLUSAO': data_formatada,
                     'DETALHES_PRESENCA': resumo_presenca
-                    # Removido: 'PORCENTAGEM_PRESENCA': f"{porcentagem_presenca:.1f}%"
                 })
             else:
                 alunos_reprovados.append({
                     'NOME': nome_aluno,
                     'CURSO': curso,
+                    'CPF': cpf,
                     'MOTIVO': f'Presença insuficiente ({porcentagem_presenca:.1f}%)',
                     'DETALHES_PRESENCA': resumo_presenca
                 })
@@ -197,7 +199,6 @@ def processar_inscricao_pandas(arquivo_inscricao, alunos_aprovados, arquivo_said
             'DATA_ADESAO', 'ESTADO', 'ESCOLA', 'NOME', 'CURSO', 'TELEFONE', 
             'EMAIL', 'CPF', 'DIA', 'MES', 'ANO', 'IDADE', 'COR_PELE', 
             'SEXO', 'SERIE_ESCOLAR', 'DATA_CONCLUSAO'
-            # Removido: 'PORCENTAGEM_PRESENCA'
         ]
         
         # Mapeamento dos campos do arquivo de inscrição para os campos finais
@@ -228,8 +229,9 @@ def processar_inscricao_pandas(arquivo_inscricao, alunos_aprovados, arquivo_said
         correspondencias_encontradas = 0
         correspondencias_por_curso = {}
         
-        # Lista para registrar casos de correspondência duvidosa
-        correspondencias_duvidosas = []
+        # Listas para registrar as correspondências
+        correspondencias_incluidos = []  # alunos com similaridade >= 0.8 (incluídos no arquivo final)
+        correspondencias_limitrofes = [] # alunos com similaridade entre 0.7 e 0.8 (para análise)
         
         # Processar em lotes para performance
         BATCH_SIZE = 500
@@ -246,6 +248,7 @@ def processar_inscricao_pandas(arquivo_inscricao, alunos_aprovados, arquivo_said
                 curso_frequencia = aluno['CURSO_ORIGINAL']
                 curso_certificado = aluno['CURSO']
                 data_conclusao = aluno['DATA_CONCLUSAO']
+                cpf_frequencia = aluno.get('CPF', '')
                 
                 # Registrar estatísticas por curso
                 if curso_frequencia not in correspondencias_por_curso:
@@ -271,6 +274,7 @@ def processar_inscricao_pandas(arquivo_inscricao, alunos_aprovados, arquivo_said
                 for inscrito in inscritos:
                     nome_inscrito = inscrito.get('Nome completo', '')
                     curso_inscrito = inscrito.get('Para qual curso você quer se inscrever?', '')
+                    cpf_inscricao = inscrito.get('CPF', '')
                     
                     # Converter para string se necessário
                     if not isinstance(nome_inscrito, str):
@@ -290,11 +294,20 @@ def processar_inscricao_pandas(arquivo_inscricao, alunos_aprovados, arquivo_said
                         nome_similar = nomes_similares(nome_aluno, nome_inscrito)
                         curso_correspondente = cursos_correspondentes(curso_frequencia, curso_inscrito)
                         
-                        # Calcular similaridade para registro de casos duvidosos
-                        similaridade = calcular_similaridade(
+                        # Calcular similaridade de várias formas
+                        similaridade_direta = calcular_similaridade(
                             normalizar_nome(nome_aluno), 
                             normalizar_nome(nome_inscrito)
                         )
+                        
+                        # Verificar se um nome é subconjunto do outro
+                        e_subconjunto, similaridade_subconjunto = verificar_subconjunto_nomes(
+                            normalizar_nome(nome_aluno), 
+                            normalizar_nome(nome_inscrito)
+                        )
+                        
+                        # Usar a maior similaridade encontrada
+                        similaridade = max(similaridade_direta, similaridade_subconjunto if e_subconjunto else 0)
                         
                         if similaridade > melhor_similaridade:
                             melhor_similaridade = similaridade
@@ -302,23 +315,21 @@ def processar_inscricao_pandas(arquivo_inscricao, alunos_aprovados, arquivo_said
                         if nome_similar and curso_correspondente:
                             inscritos_filtrados.append({
                                 'inscricao': inscrito,
-                                'similaridade': similaridade
+                                'similaridade': similaridade,
+                                'nome_inscricao': nome_inscrito,
+                                'cpf_inscricao': cpf_inscricao,
+                                'e_subconjunto': e_subconjunto
                             })
-                            
-                            # Registrar casos de similaridade baixa mas aceitável
-                            if 0.6 <= similaridade < 0.8:
-                                correspondencias_duvidosas.append({
-                                    'nome_frequencia': nome_aluno,
-                                    'nome_inscricao': nome_inscrito,
-                                    'curso': curso_frequencia,
-                                    'similaridade': similaridade
-                                })
                     except Exception as e:
                         log(f"Erro ao comparar nomes: {nome_aluno} vs {nome_inscrito} - {str(e)}")
                         continue
                 
                 # Se encontramos correspondências, ordenar por similaridade (melhor primeiro)
                 inscricao_aluno = None
+                nome_inscricao = None
+                cpf_inscricao = ""
+                similaridade_final = 0
+                e_subconjunto_final = False
                 if inscritos_filtrados:
                     # Ordenar por similaridade e depois por data (mais recente primeiro)
                     try:
@@ -333,19 +344,59 @@ def processar_inscricao_pandas(arquivo_inscricao, alunos_aprovados, arquivo_said
                         log(f"Erro ao ordenar inscrições: {str(e)}")
                     
                     inscricao_aluno = inscritos_filtrados[0]['inscricao']
-                    log(f"Correspondência encontrada para {nome_aluno} - {curso_frequencia} (similaridade: {inscritos_filtrados[0]['similaridade']:.2f})")
+                    nome_inscricao = inscritos_filtrados[0]['nome_inscricao']
+                    cpf_inscricao = inscritos_filtrados[0]['cpf_inscricao']
+                    similaridade_final = inscritos_filtrados[0]['similaridade']
+                    e_subconjunto_final = inscritos_filtrados[0].get('e_subconjunto', False)
+                    log(f"Correspondência encontrada para {nome_aluno} - {curso_frequencia} (similaridade: {similaridade_final:.2f}, subconjunto: {e_subconjunto_final})")
                 else:
                     # Se não encontrou correspondência específica para o curso, buscar a melhor correspondência pelo nome
                     try:
-                        idx_melhor = encontrar_melhor_correspondencia(nome_aluno, inscritos)
+                        idx_melhor = encontrar_melhor_correspondencia(nome_aluno, inscritos, limiar=0.7)
                         if idx_melhor is not None:
                             inscricao_aluno = inscritos[idx_melhor]
-                            log(f"Correspondência parcial para {nome_aluno} - {curso_frequencia} (melhor similaridade: {melhor_similaridade:.2f})")
+                            nome_inscrito = inscricao_aluno.get('Nome completo', '')
+                            cpf_inscricao = inscricao_aluno.get('CPF', '')
+                            if isinstance(nome_inscrito, str):
+                                nome_inscricao = nome_inscrito
+                            else:
+                                nome_inscricao = str(nome_inscrito)
+                            
+                            # Recalcular a similaridade usando os mesmos métodos
+                            similaridade_direta = calcular_similaridade(
+                                normalizar_nome(nome_aluno), 
+                                normalizar_nome(nome_inscricao)
+                            )
+                            e_subconjunto_final, similaridade_subconjunto = verificar_subconjunto_nomes(
+                                normalizar_nome(nome_aluno), 
+                                normalizar_nome(nome_inscricao)
+                            )
+                            similaridade_final = max(similaridade_direta, similaridade_subconjunto if e_subconjunto_final else 0)
+                            
+                            log(f"Correspondência parcial para {nome_aluno} - {curso_frequencia} (melhor similaridade: {similaridade_final:.2f}, subconjunto: {e_subconjunto_final})")
                     except Exception as e:
                         log(f"Erro ao encontrar melhor correspondência: {str(e)}")
                 
-                # Se encontrou uma inscrição para o aluno
+                # Registrar correspondência conforme a similaridade
                 if inscricao_aluno:
+                    correspondencia = {
+                        'nome_frequencia': nome_aluno,
+                        'nome_inscricao': nome_inscricao,
+                        'curso': curso_frequencia,
+                        'similaridade': similaridade_final,
+                        'cpf_frequencia': cpf_frequencia,
+                        'cpf_inscricao': cpf_inscricao,
+                        'e_subconjunto': e_subconjunto_final
+                    }
+                    
+                    # Verificar em qual faixa de similaridade o aluno se encaixa
+                    if similaridade_final >= 0.8:
+                        correspondencias_incluidos.append(correspondencia)
+                    elif similaridade_final >= 0.7:
+                        correspondencias_limitrofes.append(correspondencia)
+                
+                # Se encontrou uma inscrição para o aluno com similaridade >= 0.8
+                if inscricao_aluno and similaridade_final >= 0.8:
                     # Marcar como incluído
                     alunos_incluidos[chave_unica] = True
                     correspondencias_encontradas += 1
@@ -398,18 +449,28 @@ def processar_inscricao_pandas(arquivo_inscricao, alunos_aprovados, arquivo_said
                     
                     dados_finais.append(aluno_final)
                 else:
-                    log(f"Não foi encontrada inscrição para: {nome_aluno} - {curso_frequencia}")
+                    log(f"Não foi encontrada inscrição com similaridade >= 0.8 para: {nome_aluno} - {curso_frequencia}")
         
         # Salvar log de processamento
         with open("processamento_log.txt", "w", encoding="utf-8") as f:
             f.write("\n".join(log_entries))
         log(f"Log de processamento salvo em 'processamento_log.txt'")
         
-        # Salvar correspondências duvidosas
-        if correspondencias_duvidosas:
-            df_duvidosas = pd.DataFrame(correspondencias_duvidosas)
-            df_duvidosas.to_csv('correspondencias_duvidosas.csv', index=False, encoding='utf-8')
-            log(f"Correspondências duvidosas salvas em 'correspondencias_duvidosas.csv' ({len(correspondencias_duvidosas)} registros)")
+        # Salvar correspondências dos alunos incluídos (similaridade >= 0.8)
+        if correspondencias_incluidos:
+            df_correspondencias = pd.DataFrame(correspondencias_incluidos)
+            df_correspondencias.to_csv('correspondencias_incluidos.csv', index=False, encoding='utf-8')
+            log(f"Correspondências dos alunos incluídos (similaridade >= 0.8) salvas em 'correspondencias_incluidos.csv' ({len(correspondencias_incluidos)} registros)")
+        
+        # Salvar correspondências limítrofes (similaridade entre 0.7 e 0.8)
+        if correspondencias_limitrofes:
+            df_limitrofes = pd.DataFrame(correspondencias_limitrofes)
+            df_limitrofes.to_csv('correspondencias_limitrofes.csv', index=False, encoding='utf-8')
+            log(f"Correspondências limítrofes (similaridade 0.7-0.8) salvas em 'correspondencias_limitrofes.csv' ({len(correspondencias_limitrofes)} registros)")
+            
+            # Exibir informações sobre os casos limítrofes
+            print(f"\nAtenção: Encontrados {len(correspondencias_limitrofes)} alunos com similaridade entre 70% e 80%.")
+            print("Esses alunos foram registrados em 'correspondencias_limitrofes.csv' para análise manual.")
         
         # Converter para DataFrame para facilitar a escrita
         df_final = pd.DataFrame(dados_finais)
@@ -435,35 +496,6 @@ def processar_inscricao_pandas(arquivo_inscricao, alunos_aprovados, arquivo_said
             import traceback
             traceback.print_exc()
         
-        # Verificar quais alunos aprovados não foram incluídos no arquivo final
-        alunos_nao_incluidos = []
-        for aluno in alunos_aprovados:
-            nome_aluno = aluno['NOME_ORIGINAL']
-            curso = aluno['CURSO_ORIGINAL']
-            
-            # Garantir que nome_aluno seja uma string
-            if not isinstance(nome_aluno, str):
-                nome_aluno = str(nome_aluno)
-                
-            chave = f"{normalizar_nome(nome_aluno)}|{curso}"
-            if chave not in alunos_incluidos:
-                alunos_nao_incluidos.append(f"{nome_aluno} - {curso}")
-        
-        # Gerar relatório de alunos não incluídos
-        if alunos_nao_incluidos:
-            salvar_relatório_nao_incluidos(alunos_nao_incluidos)
-            
-            print(f"\nAlunos aprovados mas não incluídos (por falta de inscrição ou inscrição para curso incorreto): {len(alunos_nao_incluidos)}")
-            print("-" * 80)
-            print("| {:<4} | {:<40} | {:<20} |".format("Nº", "Nome do Aluno", "Curso"))
-            print("|" + "-"*6 + "|" + "-"*42 + "|" + "-"*22 + "|")
-            
-            for i, aluno_info in enumerate(alunos_nao_incluidos, 1):
-                partes = aluno_info.split(" - ", 1)
-                nome = partes[0] if len(partes) > 0 else ""
-                curso = partes[1] if len(partes) > 1 else ""
-                print("| {:<4} | {:<40} | {:<20} |".format(i, nome[:40], curso[:20]))
-        
         # Exibir estatísticas por curso
         exibir_estatisticas_por_curso(correspondencias_por_curso)
         
@@ -479,3 +511,57 @@ def processar_inscricao_pandas(arquivo_inscricao, alunos_aprovados, arquivo_said
         import traceback
         traceback.print_exc()
         return []  # Retornar lista vazia em caso de erro
+
+
+def exibir_estatisticas_por_curso(correspondencias_por_curso):
+    """
+    Exibe estatísticas detalhadas por curso
+    
+    Args:
+        correspondencias_por_curso: Dicionário com estatísticas por curso
+    """
+    print("\n" + "-"*80)
+    print("ESTATÍSTICAS POR CURSO")
+    print("-"*80)
+    print("| {:<30} | {:<10} | {:<12} | {:<10} |".format("Curso", "Aprovados", "Certificados", "Taxa (%)"))
+    print("|" + "-"*32 + "|" + "-"*12 + "|" + "-"*14 + "|" + "-"*12 + "|")
+    
+    for curso, stats in sorted(correspondencias_por_curso.items()):
+        total = stats['total']
+        encontrados = stats['encontrados']
+        taxa = (encontrados / total * 100) if total > 0 else 0
+        print("| {:<30} | {:<10} | {:<12} | {:<10.1f} |".format(
+            curso[:30], total, encontrados, taxa
+        ))
+
+
+def gerar_planilhas_por_curso(dados_finais, diretorio_saida="certificados_por_curso"):
+    """
+    Gera planilhas separadas para cada curso
+    
+    Args:
+        dados_finais: Lista de dicionários com dados dos alunos aprovados
+        diretorio_saida: Diretório onde serão salvos os arquivos
+    """
+    # Criar diretório se não existir
+    if not os.path.exists(diretorio_saida):
+        os.makedirs(diretorio_saida)
+    
+    # Agrupar alunos por curso
+    alunos_por_curso = {}
+    for aluno in dados_finais:
+        curso = aluno['CURSO']
+        if curso not in alunos_por_curso:
+            alunos_por_curso[curso] = []
+        alunos_por_curso[curso].append(aluno)
+    
+    # Gerar uma planilha para cada curso
+    for curso, alunos in alunos_por_curso.items():
+        # Criar nome de arquivo seguro (remover caracteres especiais)
+        nome_arquivo = ''.join(c if c.isalnum() else '_' for c in curso)
+        caminho_arquivo = os.path.join(diretorio_saida, f"{nome_arquivo}.csv")
+        
+        # Criar DataFrame e salvar
+        df_curso = pd.DataFrame(alunos)
+        df_curso.to_csv(caminho_arquivo, index=False, encoding='utf-8')
+        print(f"Arquivo para curso '{curso}' gerado: {caminho_arquivo} ({len(alunos)} alunos)")

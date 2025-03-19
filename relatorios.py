@@ -1,6 +1,3 @@
-# Arquivo: relatorios.py
-# Modificar a função para incluir todos os alunos não certificados
-
 import os
 import pandas as pd
 
